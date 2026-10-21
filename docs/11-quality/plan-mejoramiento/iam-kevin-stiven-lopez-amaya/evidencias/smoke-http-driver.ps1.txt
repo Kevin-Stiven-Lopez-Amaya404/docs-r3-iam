@@ -1,0 +1,55 @@
+$ErrorActionPreference = 'Stop'
+$workspaceRoot = (Resolve-Path (Join-Path $PSScriptRoot '../../..')).Path
+Push-Location $workspaceRoot
+$fixtureId = [guid]::NewGuid().ToString()
+$env:IAM_MFE_TEST_EMAIL = "mfe-http-$fixtureId@test.sena.edu.co"
+$env:IAM_MFE_TEST_PASSWORD = 'Mfe1!' + [guid]::NewGuid().ToString('N')
+$smokeJava = 'F:/tools/jdk-21/bin/java.exe'
+$fixtureClassPath = 'F:/tools/maven-repository/org/springframework/security/spring-security-crypto/6.3.3/spring-security-crypto-6.3.3.jar;F:/tools/maven-repository/org/springframework/spring-jcl/6.1.13/spring-jcl-6.1.13.jar'
+$fixtureMaterial = (& $smokeJava --class-path $fixtureClassPath (Join-Path $PSScriptRoot 'IamMfeFixture.java') | Out-String) | ConvertFrom-Json
+if ($LASTEXITCODE -ne 0) { throw 'Fixture material generation failed.' }
+$fixtureHash = $fixtureMaterial.passwordHash
+$fixtureSql = "INSERT INTO identity.user(id,email,password_hash,first_name,last_name,actor_type,is_active) VALUES ('$fixtureId','$env:IAM_MFE_TEST_EMAIL','$fixtureHash','MFE','Smoke','INSTRUCTOR',TRUE); INSERT INTO rbac.user_role(user_id,role_id,assigned_by) SELECT '$fixtureId',id,'$fixtureId' FROM rbac.role WHERE name='INSTRUCTOR';"
+$fixtureSql | docker exec -i iam-r3-demo-20261020 psql -U iam_demo -d iam_delivery_20261021 -v ON_ERROR_STOP=1 *> iam-mfe-fixture.log
+if ($LASTEXITCODE -ne 0) { throw 'Could not create isolated fixture.' }
+$mfeSmokeProcess = $null
+try {
+    $mfeDbEnv = docker inspect --format '{{range .Config.Env}}{{println .}}{{end}}' iam-r3-demo-20261020
+    $mfeDbPasswordLine = $mfeDbEnv | Where-Object { $_ -like 'POSTGRES_PASSWORD=*' } | Select-Object -First 1
+    if (-not $mfeDbPasswordLine) { throw 'Missing isolated DB credential.' }
+    $env:IAM_DB_DSN = 'jdbc:postgresql://127.0.0.1:55432/iam_delivery_20261021'
+    $env:IAM_DB_USERNAME = 'iam_demo'
+    $env:IAM_DB_PASSWORD = $mfeDbPasswordLine.Substring('POSTGRES_PASSWORD='.Length)
+    $env:IAM_JWT_PRIVATE_KEY = $fixtureMaterial.privateKey
+    $env:IAM_JWT_ISSUER = 'http://127.0.0.1:18080'
+    $env:IAM_API_PROXY_TARGET = 'http://127.0.0.1:18080'
+    $mfeJar = (Resolve-Path iam-integration/iam-api/target/iam-api-0.1.0.jar).Path
+    $mfeSmokeProcess = Start-Process -WindowStyle Hidden -FilePath $smokeJava -ArgumentList @('-jar', $mfeJar, '--server.address=127.0.0.1', '--server.port=18080') -PassThru -RedirectStandardOutput (Join-Path $PSScriptRoot 'mfe-stdout.log') -RedirectStandardError (Join-Path $PSScriptRoot 'mfe-stderr.log')
+    $mfeDeadline = (Get-Date).AddSeconds(55)
+    $mfeReady = $false
+    do {
+        try {
+            $mfeHealth = Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:18080/ready' -TimeoutSec 2
+            $mfeReady = $mfeHealth.StatusCode -eq 200
+        } catch { Start-Sleep -Milliseconds 1500 }
+        if ($mfeSmokeProcess.HasExited) { throw 'Temporary IAM process stopped.' }
+    } until ($mfeReady -or (Get-Date) -gt $mfeDeadline)
+    if (-not $mfeReady) { throw 'Temporary IAM readiness timed out.' }
+    $mfeNode = (Get-Command node.exe).Source
+    $mfeNodeProcess = Start-Process -WindowStyle Hidden -FilePath $mfeNode -ArgumentList 'node_modules/.cache/iam-http-smoke.mjs' -WorkingDirectory (Join-Path $workspaceRoot 'iam-mfe-integration') -Wait -PassThru -RedirectStandardOutput (Join-Path $workspaceRoot 'iam-mfe-http-smoke.log') -RedirectStandardError (Join-Path $workspaceRoot 'iam-mfe-http-smoke-stderr.log')
+    if ($mfeNodeProcess.ExitCode -ne 0) {
+        Get-Content iam-mfe-http-smoke-stderr.log -Tail 20
+        throw 'MFE HTTP smoke failed.'
+    }
+    $persistQuery = "SELECT (SELECT count(*) FROM identity_audit.audit_login WHERE user_id='$fixtureId' AND outcome='SUCCESS'), (SELECT count(*) FROM session.refresh_token WHERE user_id='$fixtureId'), (SELECT count(*) FROM identity.outbox WHERE payload->'data'->>'user_id'='$fixtureId');"
+    $persistCounts = docker exec iam-r3-demo-20261020 psql -U iam_demo -d iam_delivery_20261021 -At -c $persistQuery
+    if ($LASTEXITCODE -ne 0 -or $persistCounts.Trim() -ne '1|1|1') { throw ('Unexpected persistence counts: ' + $persistCounts) }
+    Select-String -Path iam-mfe-http-smoke.log -Pattern '^\{"login"' | Select-Object -ExpandProperty Line
+    Write-Output 'PostgreSQL persistence: 1 successful login audit, 1 refresh session, 1 outbox event.'
+} finally {
+    if ($mfeSmokeProcess -and -not $mfeSmokeProcess.HasExited) { Stop-Process -Id $mfeSmokeProcess.Id -Force }
+    $fixtureCleanup = "DELETE FROM identity.outbox WHERE payload->'data'->>'user_id'='$fixtureId'; DELETE FROM identity_audit.audit_login WHERE user_id='$fixtureId'; DELETE FROM identity.user WHERE id='$fixtureId';"
+    $fixtureCleanup | docker exec -i iam-r3-demo-20261020 psql -U iam_demo -d iam_delivery_20261021 -v ON_ERROR_STOP=1 *> iam-mfe-cleanup.log
+    if ($LASTEXITCODE -ne 0) { Write-Output 'Fixture cleanup requires review.' }
+    Pop-Location
+}

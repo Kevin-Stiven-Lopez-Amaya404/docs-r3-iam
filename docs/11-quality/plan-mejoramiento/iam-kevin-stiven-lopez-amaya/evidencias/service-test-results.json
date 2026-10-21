@@ -1,0 +1,1855 @@
+{
+    "scope":  "Resultados XML locales historicos; transformacion documental, sin nueva ejecucion",
+    "summary":  [
+                    {
+                        "group":  "iam-core, surefire-reports",
+                        "files":  21,
+                        "tests":  92,
+                        "failures":  0,
+                        "errors":  0,
+                        "skipped":  0
+                    },
+                    {
+                        "group":  "iam-adapters, surefire-reports",
+                        "files":  15,
+                        "tests":  90,
+                        "failures":  0,
+                        "errors":  0,
+                        "skipped":  0
+                    },
+                    {
+                        "group":  "iam-api, surefire-reports",
+                        "files":  2,
+                        "tests":  4,
+                        "failures":  0,
+                        "errors":  0,
+                        "skipped":  0
+                    },
+                    {
+                        "group":  "iam-api, failsafe-reports",
+                        "files":  9,
+                        "tests":  55,
+                        "failures":  0,
+                        "errors":  0,
+                        "skipped":  1
+                    }
+                ],
+    "suites":  [
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.AssignUserRoleTest.xml",
+                       "sourceSha256":  "e4af5420d0b0d6f3d1e504867ac334bfd8356dec3cf27c44f75f40c8243847fa",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "throws_when_role_not_found",
+                                             "classname":  "co.sena.iam.application.usecase.AssignUserRoleTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "assigns_role_and_stages_event",
+                                             "classname":  "co.sena.iam.application.usecase.AssignUserRoleTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "throws_when_user_not_found",
+                                             "classname":  "co.sena.iam.application.usecase.AssignUserRoleTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.AuthenticateUserTest.xml",
+                       "sourceSha256":  "633d4a06174374ac7600930d560d4b19736902aaa5375923582c66240a2c232b",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  17,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "persistsHashedRefreshTokenForSevenDays",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "allowsLoginOnceTheLockElapsed",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesWrongPassword",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesUnknownEmail",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "auditsSuccessAndStampsLastLogin",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "issuesAccessTokenWithFeatureScopePairsFromAuthorizationEvaluation",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "tenthFailureLocksForTwentyFourHours",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsLockedAccountEvenWithTheRightPassword",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "firstLoginWithExpiredTempPasswordIsRejected",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "issuesTokensForValidCredentials",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "fiveFailuresLockForFifteenMinutes",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "successResetsTheFailureCounter",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "matchesEmailCaseInsensitively",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "stagesSessionStartedOnSuccess",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "stagesNothingWhenLoginIsRefused",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesDisabledAccount",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "firstLoginWithTempPasswordDemandsPwChange",
+                                             "classname":  "co.sena.iam.application.usecase.AuthenticateUserTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ConfirmPasswordResetTest.xml",
+                       "sourceSha256":  "1d177e4a71fed997273b683d6536262e5ba43ae4fe54df88709e17102b341f2d",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "unknownTokenThrows",
+                                             "classname":  "co.sena.iam.application.usecase.ConfirmPasswordResetTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "expiredTokenThrows",
+                                             "classname":  "co.sena.iam.application.usecase.ConfirmPasswordResetTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "usedTokenThrows",
+                                             "classname":  "co.sena.iam.application.usecase.ConfirmPasswordResetTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "validTokenUpdatesPasswordAndRevokesSessions",
+                                             "classname":  "co.sena.iam.application.usecase.ConfirmPasswordResetTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.CreateUserTest.xml",
+                       "sourceSha256":  "37ddc9df57a0a0d58cba0fab28fa73ed1382dfe33b22a003d94622183b7d9bf3",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "rejects_duplicate_email",
+                                             "classname":  "co.sena.iam.application.usecase.CreateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "creates_user_with_initial_role",
+                                             "classname":  "co.sena.iam.application.usecase.CreateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "creates_user_and_stages_created_event",
+                                             "classname":  "co.sena.iam.application.usecase.CreateUserTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.DeactivateUserTest.xml",
+                       "sourceSha256":  "380db288bd814e008dd4e9b0aa1713b309aff35c402bf09d7a8fc0bdc2ac6d74",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "deactivates_and_stages_event",
+                                             "classname":  "co.sena.iam.application.usecase.DeactivateUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "throws_when_user_not_found",
+                                             "classname":  "co.sena.iam.application.usecase.DeactivateUserTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.EvaluateAuthorizationTest.xml",
+                       "sourceSha256":  "1de251bcfaa321d93420f760869ec026980f748fa5e89feae286904da4858cd8",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "permitsWhenCenterScopedGrantMatches",
+                                             "classname":  "co.sena.iam.application.usecase.EvaluateAuthorizationTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deniesOutsideCenter",
+                                             "classname":  "co.sena.iam.application.usecase.EvaluateAuthorizationTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownUserDenied",
+                                             "classname":  "co.sena.iam.application.usecase.EvaluateAuthorizationTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.GetCurrentUserTest.xml",
+                       "sourceSha256":  "a119aaf89d4d988583938bb0b21c7bb116bf7318b6e9e1486ff7a4728863cf66",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "rejectsDisabledAccount",
+                                             "classname":  "co.sena.iam.application.usecase.GetCurrentUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsInvalidToken",
+                                             "classname":  "co.sena.iam.application.usecase.GetCurrentUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "resolvesIdentityForValidToken",
+                                             "classname":  "co.sena.iam.application.usecase.GetCurrentUserTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsTokenWithUnknownSubject",
+                                             "classname":  "co.sena.iam.application.usecase.GetCurrentUserTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.GetLoginAuditReportTest.xml",
+                       "sourceSha256":  "95001080ffe3379492ac28a5110aeea7f3fdedca6484f48dd8cb811061c0cb9c",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "delegatesToQueryPortWhenPermitted",
+                                             "classname":  "co.sena.iam.application.usecase.GetLoginAuditReportTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deniesOnBlockOverride",
+                                             "classname":  "co.sena.iam.application.usecase.GetLoginAuditReportTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "evaluatesRequestedFeatureAndTargetCenter",
+                                             "classname":  "co.sena.iam.application.usecase.GetLoginAuditReportTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deniesWithoutGrant",
+                                             "classname":  "co.sena.iam.application.usecase.GetLoginAuditReportTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.GrantScopeOverrideTest.xml",
+                       "sourceSha256":  "8cced4e26ee7b11e2cfc9cd766192e8772950f6f97a997833c59115c5a765504",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "rejectsUnknownFeature",
+                                             "classname":  "co.sena.iam.application.usecase.GrantScopeOverrideTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsUnknownUser",
+                                             "classname":  "co.sena.iam.application.usecase.GrantScopeOverrideTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "createsOverrideAndStagesEvent",
+                                             "classname":  "co.sena.iam.application.usecase.GrantScopeOverrideTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListModulesTest.xml",
+                       "sourceSha256":  "0f0bc72c89c36a5aaa9f0bdbc37b0fc94ea56efa6a16737e87af75d4b2c5e45b",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "returnsModulesWithFeatures",
+                                             "classname":  "co.sena.iam.application.usecase.ListModulesTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "returnsEmptyWhenNoModules",
+                                             "classname":  "co.sena.iam.application.usecase.ListModulesTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListRoleFeaturesTest.xml",
+                       "sourceSha256":  "46b901aba3eaf20206deaae1a2d6b56d5e21de6a07b8dc7dbbb13e37d948d5e7",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "centerScopedFeatureHasTrainingCenterScope",
+                                             "classname":  "co.sena.iam.application.usecase.ListRoleFeaturesTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "returnsFeaturesForKnownRole",
+                                             "classname":  "co.sena.iam.application.usecase.ListRoleFeaturesTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownRoleThrows",
+                                             "classname":  "co.sena.iam.application.usecase.ListRoleFeaturesTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListRolesTest.xml",
+                       "sourceSha256":  "fe368a37ccdeb70b8456420c8c9d8d56926cfaa3256d3662bf38ba500b7fe87c",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "returnsAllRoles",
+                                             "classname":  "co.sena.iam.application.usecase.ListRolesTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "systemRoleFlagPreserved",
+                                             "classname":  "co.sena.iam.application.usecase.ListRolesTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListScopeOverridesTest.xml",
+                       "sourceSha256":  "9e47a4d509220f04794ad20b2d173abb644e18856a882304edac01fca5366558",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "rejectsUnknownUser",
+                                             "classname":  "co.sena.iam.application.usecase.ListScopeOverridesTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "returnsActiveOverridesOnly",
+                                             "classname":  "co.sena.iam.application.usecase.ListScopeOverridesTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListUserSessionsTest.xml",
+                       "sourceSha256":  "37b2584bfc9bdf1e7a2f41f989967a2cb4d67045d6ed911b471bedb9cf4f371a",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "doesNotLeakOtherUsersSessions",
+                                             "classname":  "co.sena.iam.application.usecase.ListUserSessionsTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listsAllSessionsForUser",
+                                             "classname":  "co.sena.iam.application.usecase.ListUserSessionsTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "emptyForUserWithNoSessions",
+                                             "classname":  "co.sena.iam.application.usecase.ListUserSessionsTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.LogoutTest.xml",
+                       "sourceSha256":  "aff66ce33795c07ab9c03c26766b14875f8c3e987a05c0d682c9986cd25a8795",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "logoutUnknownSessionIsNoop",
+                                             "classname":  "co.sena.iam.application.usecase.LogoutTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "logoutIsIdempotent",
+                                             "classname":  "co.sena.iam.application.usecase.LogoutTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "logoutRevokesTheSession",
+                                             "classname":  "co.sena.iam.application.usecase.LogoutTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RefreshAccessTokenTest.xml",
+                       "sourceSha256":  "2dcd1999bad8a2b912dd8a9eff825a8863da57862aa7f40b368b4f6864bafee1",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  5,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "validRefreshReturnsNewAccessToken",
+                                             "classname":  "co.sena.iam.application.usecase.RefreshAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownHashIsRejected",
+                                             "classname":  "co.sena.iam.application.usecase.RefreshAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokedTokenIsRejected",
+                                             "classname":  "co.sena.iam.application.usecase.RefreshAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refreshRecalculatesFeatureScopePairs",
+                                             "classname":  "co.sena.iam.application.usecase.RefreshAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "expiredTokenIsRejected",
+                                             "classname":  "co.sena.iam.application.usecase.RefreshAccessTokenTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RequestPasswordResetTest.xml",
+                       "sourceSha256":  "efb1bf1d7cab29f86dc4059f3847d0f6f5e2467f9b7175e7062149741a44eda2",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "unknownEmailDoesNothing",
+                                             "classname":  "co.sena.iam.application.usecase.RequestPasswordResetTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "emailNormalisedBeforeLookup",
+                                             "classname":  "co.sena.iam.application.usecase.RequestPasswordResetTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "knownEmailPersistsRecord",
+                                             "classname":  "co.sena.iam.application.usecase.RequestPasswordResetTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rateLimitExceededThrows",
+                                             "classname":  "co.sena.iam.application.usecase.RequestPasswordResetTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RevokeScopeOverrideTest.xml",
+                       "sourceSha256":  "f9ba4ca87c28c97d20c3ed0ce5bf6f3be0e3bed3bbda8ee8ae5da09663c454b8",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "rejectsUnknownOverride",
+                                             "classname":  "co.sena.iam.application.usecase.RevokeScopeOverrideTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "removesOverrideAndStagesEvent",
+                                             "classname":  "co.sena.iam.application.usecase.RevokeScopeOverrideTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RevokeUserSessionTest.xml",
+                       "sourceSha256":  "9f11fdd0c328e979f2d66fa128c731a5cec021023078f249e278d4aaba2f4578",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "revokesOwnSession",
+                                             "classname":  "co.sena.iam.application.usecase.RevokeUserSessionTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "throwsWhenSessionBelongsToOtherUser",
+                                             "classname":  "co.sena.iam.application.usecase.RevokeUserSessionTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "throwsWhenSessionNotFound",
+                                             "classname":  "co.sena.iam.application.usecase.RevokeUserSessionTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.domain.model.LockoutPolicyTest.xml",
+                       "sourceSha256":  "c294bfc0f0c0f7d87b42e7d7596a4e05e1026cd25d77e4fc8026128127034dfc",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  5,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "successClearsCounterAndLock",
+                                             "classname":  "co.sena.iam.domain.model.LockoutPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "locksFifteenMinutesAtFifthFailure",
+                                             "classname":  "co.sena.iam.domain.model.LockoutPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "expiredLockIsNotLocked",
+                                             "classname":  "co.sena.iam.domain.model.LockoutPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "countsWithoutLockingBelowFirstThreshold",
+                                             "classname":  "co.sena.iam.domain.model.LockoutPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "locksTwentyFourHoursAtTenthFailure",
+                                             "classname":  "co.sena.iam.domain.model.LockoutPolicyTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.domain.service.AuthorizationPolicyTest.xml",
+                       "sourceSha256":  "b57696f76662492ab67c1343860ded71c79605a472b3842ce11a3bffb0a5c574",
+                       "module":  "iam-core",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  15,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "expiredAllowOverrideIsIgnored",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "allowOverrideAddsAMissingFeature",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "missingFeatureIsDenied",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "roleGrantMaterializesAsCodeScopePair",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "centerScopedGrantAuthorizesInsideCenter",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "resultIsSortedByFeatureCode",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "expiredBlockOverrideIsIgnored",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "centerScopedGrantDeniedWithoutTargetCenter",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "centerAllowOverrideBoundToUserCenters",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "blockOverrideRemovesTheFeature",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "globalRoleGrantAuthorizesAnyCenter",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "centerScopedGrantDeniedOutsideCenter",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "sameFeatureAtTwoScopesKeepsTheBroadest",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "blockOverrideRevokesRoleGrant",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "allowOverrideGrantsMissingFeature",
+                                             "classname":  "co.sena.iam.domain.service.AuthorizationPolicyTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.ApiErrorsTest.xml",
+                       "sourceSha256":  "d6ce6c22bd4d43c2364736d5c576adfe5a56c9438dcea60974b01863289cafa3",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "fallsBackToRequestIdWhenTraceIsUnavailable",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ApiErrorsTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "prefersOpenTelemetryTraceIdOverRequestId",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ApiErrorsTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "generatesUuidWhenTraceAndRequestIdAreUnavailable",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ApiErrorsTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.AuthControllerTest.xml",
+                       "sourceSha256":  "f3f75f8d00d49c455544e0f308ff4c29fe4ec1ef57f82ca77fab72f61461f4cf",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  7,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "loginWithInvalidPayloadReturns400",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "meReturnsIdentity",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "meWithRejectedTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginReturnsTokens",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "meWithoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginOnLockedAccountReturns423",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginWithWrongCredentialsReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.AuthControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.CorrelationIdFilterTest.xml",
+                       "sourceSha256":  "e0d2e73afd97a1481c8b3d2b5ff0907abe36b2b9b5e418edc393e5807a7473a8",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  6,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "reusesValidIdAndPreservesOpenTelemetryTraceId",
+                                             "classname":  "co.sena.iam.adapter.in.rest.CorrelationIdFilterTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "generatesUuidWhenHeaderIsMissing",
+                                             "classname":  "co.sena.iam.adapter.in.rest.CorrelationIdFilterTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "generatesUuidWhenHeaderIsInvalid",
+                                             "classname":  "co.sena.iam.adapter.in.rest.CorrelationIdFilterTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "clearsCorrelationIdWhenFilterChainFails",
+                                             "classname":  "co.sena.iam.adapter.in.rest.CorrelationIdFilterTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "restoresPreviousCorrelationIdWhenFilterChainFails",
+                                             "classname":  "co.sena.iam.adapter.in.rest.CorrelationIdFilterTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "restoresPreviousCorrelationId",
+                                             "classname":  "co.sena.iam.adapter.in.rest.CorrelationIdFilterTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.HealthControllerBrokerTest.xml",
+                       "sourceSha256":  "e756300e74c5b19a3bdbcf2b71e5f5e7d4dd59461c8ba135eac9d95b52c52f42",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "readyWhenDbAndBrokerUp",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerBrokerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "notReadyWhenBrokerDown",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerBrokerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.HealthControllerTest.xml",
+                       "sourceSha256":  "40987742772d3fbec357ffadb3f2b6be20c7ebe004d6a49638edad76978bccf3",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  5,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "readyWhenDbUp",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "notReadyWhenDbDown",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "healthPreservesProvidedCorrelationId",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "healthAlwaysUp",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "healthReturnsGeneratedCorrelationId",
+                                             "classname":  "co.sena.iam.adapter.in.rest.HealthControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.JwksControllerTest.xml",
+                       "sourceSha256":  "362d5c1a5d8e94f97b7bf05ff787a411c097ce0e87b2bd64d4ee395b093ad7b7",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  2,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "publishesBothKeysDuringRotation",
+                                             "classname":  "co.sena.iam.adapter.in.rest.JwksControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "publishesCurrentKeyAsRsaJwk",
+                                             "classname":  "co.sena.iam.adapter.in.rest.JwksControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.M2mTokenControllerTest.xml",
+                       "sourceSha256":  "edebbfe6a68d5828f65fff7ebd2f48b7e96d16513ce08003f304c4e6fd23d405",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "rejectsWrongClientSecret",
+                                             "classname":  "co.sena.iam.adapter.in.rest.M2mTokenControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsOtherGrantTypes",
+                                             "classname":  "co.sena.iam.adapter.in.rest.M2mTokenControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesToIssueTokenWhenClientIsNotConfigured",
+                                             "classname":  "co.sena.iam.adapter.in.rest.M2mTokenControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "issuesShortLivedTokenWithOnlyAcademicCapacityFeatures",
+                                             "classname":  "co.sena.iam.adapter.in.rest.M2mTokenControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.PasswordResetControllerTest.xml",
+                       "sourceSha256":  "fc21ae48678258c8df23eda08cdcef4fb81fc99dd1e305982a935390801a2cb9",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  6,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "requestReturns429WhenRateLimited",
+                                             "classname":  "co.sena.iam.adapter.in.rest.PasswordResetControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "requestReturns202",
+                                             "classname":  "co.sena.iam.adapter.in.rest.PasswordResetControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "confirmReturns204",
+                                             "classname":  "co.sena.iam.adapter.in.rest.PasswordResetControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginReturns401WhenTempPasswordExpired",
+                                             "classname":  "co.sena.iam.adapter.in.rest.PasswordResetControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "confirmReturns400ForInvalidToken",
+                                             "classname":  "co.sena.iam.adapter.in.rest.PasswordResetControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginReturns403WhenMustChangePassword",
+                                             "classname":  "co.sena.iam.adapter.in.rest.PasswordResetControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.RbacControllerTest.xml",
+                       "sourceSha256":  "c71aebeb1432a652758f110f1b9abe0479095a82a1168367544f811e358a843d",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  16,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "listRoleFeaturesWithoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "createScopeOverrideWithoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "createScopeOverrideReturns201",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "globalRoleHasNoTrainingCenter",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listModulesWithoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeUnknownScopeOverrideReturns404",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listScopeOverridesReturnsList",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "centerScopedFeaturePreservesScopeType",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listModulesReturnsModules",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listRolesReturnsRoles",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listRolesWithoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listModulesWithInvalidTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeScopeOverrideReturns204",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listRoleFeaturesReturnsFeatures",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "createScopeOverrideUnknownFeatureReturns422",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownRoleIdReturns404",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RbacControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest.xml",
+                       "sourceSha256":  "2bc606faf8dc37a1614438769238f4b69f7e097f0eedb615687b191b3dcf0afb",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "logoutWithoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "logoutWithValidBearerReturns204",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refreshWithValidTokenReturns200",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refreshWithRevokedTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.ReportControllerTest.xml",
+                       "sourceSha256":  "82cc96872ace73123c0e42927a3168a2bb61e123eca049eabba6bd734a0f93a1",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  6,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "passesFiltersThrough",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ReportControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "returnsPage",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ReportControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "withoutGrantReturns403",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ReportControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "invalidOutcomeReturns400",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ReportControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "invalidTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ReportControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "withoutTokenReturns401",
+                                             "classname":  "co.sena.iam.adapter.in.rest.ReportControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.SessionControllerTest.xml",
+                       "sourceSha256":  "c488a412cfb5b768536ed4b64eb07273ec911eef612246c0cd4456ab0e51addc",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "listSessionsReturns200WhenEmpty",
+                                             "classname":  "co.sena.iam.adapter.in.rest.SessionControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeSessionReturns204",
+                                             "classname":  "co.sena.iam.adapter.in.rest.SessionControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeUnknownSessionReturns404",
+                                             "classname":  "co.sena.iam.adapter.in.rest.SessionControllerTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listSessionsReturns200WithSessions",
+                                             "classname":  "co.sena.iam.adapter.in.rest.SessionControllerTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest.xml",
+                       "sourceSha256":  "0b542b5d43ec48aedbe88a13fc4c653d8904cc389af273587ed1bfed6744242d",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  6,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "omitsFichaWhenActorsReturnsNoContent",
+                                             "classname":  "co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "omitsFichaWhenActorsReturnsConflict",
+                                             "classname":  "co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "omitsFichaWhenActorsReturnsServerError",
+                                             "classname":  "co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "returnsFichaForValidActorsResponse",
+                                             "classname":  "co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "omitsFichaWhenActorsReturnsNotFound",
+                                             "classname":  "co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "omitsFichaWhenActorsIsUnavailable",
+                                             "classname":  "co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.out.messaging.OutboxRelayTest.xml",
+                       "sourceSha256":  "328f3e19b07fb4c73859b33aaff3ce28172a64448a6bcdb9802ab897e40f7f11",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  7,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "publishesEachUnpublishedRowThenMarksItPublished",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "publishesNothingForAnEmptyBatch",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsANonObjectPayload",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "abortsTheBatchWhenAPublishFails",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rekeysStagedDataToEnvelopePayloadOnTheWire",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsANonPositiveBatchSize",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "keepsAPresentCorrelationIdAndAnAlreadyPayloadKeyedEnvelope",
+                                             "classname":  "co.sena.iam.adapter.out.messaging.OutboxRelayTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.out.security.JwtAccessTokenTest.xml",
+                       "sourceSha256":  "0a4300ec8a69e294978332f8526b3d9f6bd3c87f823360c0bb5aa26a73c2e9de",
+                       "module":  "iam-adapters",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  12,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "exposesThePreviousKeyDuringRotation",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsMissingToken",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "previousKeyWithoutKidFailsStartup",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsTokenSignedByAnotherKey",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "noPreviousKeyOutsideARotationWindow",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "acceptsPemArmouredKey",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesToStartWithoutAUsableKey",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rejectsExpiredToken",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "stampsSubRolesFeatureScopesAndExpiry",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refreshTokensAreUniqueAndHashed",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "doesNotLookupFichaForNonLearner",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "issuedTokenVerifiesToItsSubjectAndSession",
+                                             "classname":  "co.sena.iam.adapter.out.security.JwtAccessTokenTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/surefire-reports/TEST-co.sena.iam.api.IamApiApplicationContextTest.xml",
+                       "sourceSha256":  "9f6281694ba702626c1146ce8b342b0ea111458b789afbb7d534f1d8cdaee5b5",
+                       "module":  "iam-api",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "applicationContextLoads",
+                                             "classname":  "co.sena.iam.api.IamApiApplicationContextTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "prometheusEndpointExposesHttpRequestHistogram",
+                                             "classname":  "co.sena.iam.api.IamApiApplicationContextTest",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "everyTaggedEndpointRoutesToItsController",
+                                             "classname":  "co.sena.iam.api.IamApiApplicationContextTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/surefire-reports/TEST-co.sena.iam.api.IamApiApplicationSmokeTest.xml",
+                       "sourceSha256":  "36438d050a6dd5cf6c2af0431766ce576fe2de084e566a727c8c315f4ff3fec3",
+                       "module":  "iam-api",
+                       "reportType":  "surefire-reports",
+                       "timestamp":  "",
+                       "tests":  1,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "healthEndpointReturns200",
+                                             "classname":  "co.sena.iam.api.IamApiApplicationSmokeTest",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.AuthorizationPostgresIT.xml",
+                       "sourceSha256":  "7c2a715ae1e6b74647dbc95badf2f142f4c0dc53b0a6b03442d0910ebf7f86ba",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  6,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "blockOverrideRevokesAccess",
+                                             "classname":  "co.sena.iam.api.AuthorizationPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "permittedInsideAssignedCenter",
+                                             "classname":  "co.sena.iam.api.AuthorizationPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "permittedByGlobalRole",
+                                             "classname":  "co.sena.iam.api.AuthorizationPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deniedWhenFeatureMissing",
+                                             "classname":  "co.sena.iam.api.AuthorizationPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deniedOutsideAssignedCenter",
+                                             "classname":  "co.sena.iam.api.AuthorizationPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "allowOverrideGrantsAccess",
+                                             "classname":  "co.sena.iam.api.AuthorizationPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.LoginAuditReportPostgresIT.xml",
+                       "sourceSha256":  "6bd0f52c493e705434b954ad03af5f8af40f5f421aeb1ca9669d9de29000bbb2",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "filtersByOutcome",
+                                             "classname":  "co.sena.iam.api.LoginAuditReportPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "paginatesByCursor",
+                                             "classname":  "co.sena.iam.api.LoginAuditReportPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesMissingToken",
+                                             "classname":  "co.sena.iam.api.LoginAuditReportPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refusesCallerWithoutGrant",
+                                             "classname":  "co.sena.iam.api.LoginAuditReportPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.LoginPostgresIT.xml",
+                       "sourceSha256":  "e332c6ed64ba8d8d98687e16ac33d0e087b320ff11fa4ff69c0c2c9a1c94d8f6",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  9,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "loginWorksAfterTheLockElapsed",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginWithWrongPasswordIsRefusedAndCounted",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "successResetsTheCounter",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "meReturnsTheAuthenticatedIdentity",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "tenthFailureLocksForADay",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "meRefusesAForgedToken",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "fiveFailuresLockTheAccount",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginWithUnknownEmailIsAudited",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "loginSucceeds",
+                                             "classname":  "co.sena.iam.api.LoginPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.OutboxRelayPostgresIT.xml",
+                       "sourceSha256":  "10d56ccbee0d7bc5424e560374a429f245af184ed4e3d36d40f58c4047f69e17",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  1,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  1,
+                       "testcases":  [
+                                         {
+                                             "name":  "relayPublishesStagedEventsAndMarksThemPublished",
+                                             "classname":  "co.sena.iam.api.OutboxRelayPostgresIT",
+                                             "status":  "skipped"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.PasswordResetPostgresIT.xml",
+                       "sourceSha256":  "85739f19aecdd4952dffe78c03a0c5e34393efcbca567f6eefc4b400ce24c0a9",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "firstLoginReturns403",
+                                             "classname":  "co.sena.iam.api.PasswordResetPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "fullResetFlow",
+                                             "classname":  "co.sena.iam.api.PasswordResetPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "expiredTempPasswordReturns401",
+                                             "classname":  "co.sena.iam.api.PasswordResetPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.RbacCatalogPostgresIT.xml",
+                       "sourceSha256":  "bd06623c1e725d7dc98c63747588b0214045a9f6c8693daf7f3720caa749482f",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  10,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "roleFeaturesWithoutTokenIsRefused",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownRoleAnswers404",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listModulesWithoutTokenIsRefused",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "sysAdminFeaturesHaveGlobalScope",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listModulesReturnsSeedData",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "rolesAreListedWithoutCenterScope",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "centerDirectorHasTrainingCenterScope",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listModulesContainsIdentityModule",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listRolesReturnsSeedRoles",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listRolesWithoutTokenIsRefused",
+                                             "classname":  "co.sena.iam.api.RbacCatalogPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.ScopeOverridePostgresIT.xml",
+                       "sourceSha256":  "e4e5600bcb431eb6def0eb9d016be9891abdb99e68e5ff3dceb7633334b1ab51",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  5,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "unknownFeatureAnswers422",
+                                             "classname":  "co.sena.iam.api.ScopeOverridePostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownOverrideAnswers404",
+                                             "classname":  "co.sena.iam.api.ScopeOverridePostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revoke",
+                                             "classname":  "co.sena.iam.api.ScopeOverridePostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "grantAndList",
+                                             "classname":  "co.sena.iam.api.ScopeOverridePostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "withoutTokenAnswers401",
+                                             "classname":  "co.sena.iam.api.ScopeOverridePostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.SessionPostgresIT.xml",
+                       "sourceSha256":  "66ba59b6d9d3e22f7ba10ad8cf6a12e752fd39c89313f88eaf689d546c8eeb9e",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  6,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "logoutRevokesAndPreventsRefresh",
+                                             "classname":  "co.sena.iam.api.SessionPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeSessionMarksItRevoked",
+                                             "classname":  "co.sena.iam.api.SessionPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeUnknownSessionReturns404",
+                                             "classname":  "co.sena.iam.api.SessionPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listSessionsShowsActiveSession",
+                                             "classname":  "co.sena.iam.api.SessionPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refreshWithUnknownTokenReturns401",
+                                             "classname":  "co.sena.iam.api.SessionPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "refreshWithValidTokenReturns200",
+                                             "classname":  "co.sena.iam.api.SessionPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   },
+                   {
+                       "source":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.UserManagementPostgresIT.xml",
+                       "sourceSha256":  "7509429de8f593f96ed51c617ca01146734aa663d03971502c0cdf6e7be717ed",
+                       "module":  "iam-api",
+                       "reportType":  "failsafe-reports",
+                       "timestamp":  "",
+                       "tests":  11,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "testcases":  [
+                                         {
+                                             "name":  "duplicateEmailAnswers409",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "assignRoleCreatesRecordAndStagedEvent",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "listUsersReturnsPaginatedResult",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "createUserWithoutTokenAnswers401",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deactivateUnknownUserAnswers404",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "getUserByIdReturnsUser",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "revokeRoleRemovesRecord",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "deactivateUserSetsInactiveAndStagedEvent",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "updateUserChangesFields",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "unknownUserIdAnswers404",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         },
+                                         {
+                                             "name":  "createUserReturnsTemporaryPasswordAndStagedEvent",
+                                             "classname":  "co.sena.iam.api.UserManagementPostgresIT",
+                                             "status":  "passed"
+                                         }
+                                     ]
+                   }
+               ]
+}

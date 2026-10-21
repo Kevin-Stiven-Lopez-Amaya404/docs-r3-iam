@@ -1,0 +1,78 @@
+{
+  "consultedAtUtc": "2026-10-21T15:48:19.392Z",
+  "scope": "Read-only GitHub metadata snapshot; not a new execution or deployment",
+  "components": [
+    {
+      "repository": "code-sena/design-software-iam-service",
+      "pullRequest": {
+        "url": "https://github.com/code-sena/design-software-iam-service/pull/43",
+        "number": 43,
+        "title": "feat(iam): integrate request correlation and Prometheus metrics",
+        "author": "Kevin-Stiven-Lopez-Amaya404",
+        "state": "open",
+        "merged": false,
+        "base": "develop",
+        "head": "r3-observability-delivery-dev",
+        "headSha": "7c837e0824263cef0aef89f807731adca839f25e"
+      },
+      "workflowRun": {
+        "url": "https://github.com/code-sena/design-software-iam-service/actions/runs/39537700071",
+        "id": 39537700071,
+        "name": "IAM build and tests",
+        "headSha": "7c837e0824263cef0aef89f807731adca839f25e",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-10-21T03:16:50Z",
+        "updatedAt": "2026-10-21T03:18:21Z"
+      }
+    },
+    {
+      "repository": "code-sena/design-software-iam-db",
+      "pullRequest": {
+        "url": "https://github.com/code-sena/design-software-iam-db/pull/79",
+        "number": 79,
+        "title": "test(iam-db): validate schema and migrations for IAM Service integration",
+        "author": "Kevin-Stiven-Lopez-Amaya404",
+        "state": "open",
+        "merged": false,
+        "base": "develop",
+        "head": "r3-iam-db-integration-dev",
+        "headSha": "7fe2798cf5d5c90b6e51509e6dd052f1929f81b8"
+      },
+      "workflowRun": {
+        "url": "https://github.com/code-sena/design-software-iam-db/actions/runs/39538261790",
+        "id": 39538261790,
+        "name": "IAM database integration",
+        "headSha": "7fe2798cf5d5c90b6e51509e6dd052f1929f81b8",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-10-21T03:23:03Z",
+        "updatedAt": "2026-10-21T03:23:41Z"
+      }
+    },
+    {
+      "repository": "code-sena/design-software-iam-mfe",
+      "pullRequest": {
+        "url": "https://github.com/code-sena/design-software-iam-mfe/pull/10",
+        "number": 10,
+        "title": "feat(iam-mfe): integrate real authentication and request correlation",
+        "author": "Kevin-Stiven-Lopez-Amaya404",
+        "state": "open",
+        "merged": false,
+        "base": "develop",
+        "head": "r3-iam-mfe-integration-dev",
+        "headSha": "e73e844bebebb64b99bfce24a908926f0e4cf76b"
+      },
+      "workflowRun": {
+        "url": "https://github.com/code-sena/design-software-iam-mfe/actions/runs/39540502857",
+        "id": 39540502857,
+        "name": "IAM MFE integration",
+        "headSha": "e73e844bebebb64b99bfce24a908926f0e4cf76b",
+        "status": "completed",
+        "conclusion": "failure",
+        "createdAt": "2026-10-21T03:47:27Z",
+        "updatedAt": "2026-10-21T03:47:37Z"
+      }
+    }
+  ]
+}

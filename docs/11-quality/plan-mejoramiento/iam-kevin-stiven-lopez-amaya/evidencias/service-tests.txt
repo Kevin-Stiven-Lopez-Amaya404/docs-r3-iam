@@ -1,0 +1,62 @@
+Extracto de evidencia existente. Seleccion de lineas, no nueva ejecucion. Numeros L corresponden al archivo fuente.
+
+SOURCE L01: iam-integration-test.log
+L44: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.643 s -- in co.sena.iam.application.usecase.AssignUserRoleTest
+L46: [INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s -- in co.sena.iam.application.usecase.AuthenticateUserTest
+L48: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s -- in co.sena.iam.application.usecase.ConfirmPasswordResetTest
+L50: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.210 s -- in co.sena.iam.application.usecase.CreateUserTest
+L52: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s -- in co.sena.iam.application.usecase.DeactivateUserTest
+L54: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s -- in co.sena.iam.application.usecase.EvaluateAuthorizationTest
+L56: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in co.sena.iam.application.usecase.GetCurrentUserTest
+L58: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in co.sena.iam.application.usecase.GetLoginAuditReportTest
+L60: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in co.sena.iam.application.usecase.GrantScopeOverrideTest
+L62: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in co.sena.iam.application.usecase.ListModulesTest
+L64: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in co.sena.iam.application.usecase.ListRoleFeaturesTest
+L66: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in co.sena.iam.application.usecase.ListRolesTest
+L68: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in co.sena.iam.application.usecase.ListScopeOverridesTest
+L70: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in co.sena.iam.application.usecase.ListUserSessionsTest
+L72: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in co.sena.iam.application.usecase.LogoutTest
+L74: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in co.sena.iam.application.usecase.RefreshAccessTokenTest
+L76: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s -- in co.sena.iam.application.usecase.RequestPasswordResetTest
+L78: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in co.sena.iam.application.usecase.RevokeScopeOverrideTest
+L80: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in co.sena.iam.application.usecase.RevokeUserSessionTest
+L82: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.020 s -- in co.sena.iam.domain.model.LockoutPolicyTest
+L84: [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 s -- in co.sena.iam.domain.service.AuthorizationPolicyTest
+L88: [INFO] Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
+L240: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.540 s -- in co.sena.iam.adapter.in.rest.ApiErrorsTest
+L669: [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.56 s -- in co.sena.iam.adapter.in.rest.AuthControllerTest
+L671: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in co.sena.iam.adapter.in.rest.CorrelationIdFilterTest
+L1061: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.202 s -- in co.sena.iam.adapter.in.rest.HealthControllerBrokerTest
+L1460: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.240 s -- in co.sena.iam.adapter.in.rest.HealthControllerTest
+L1462: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.774 s -- in co.sena.iam.adapter.in.rest.JwksControllerTest
+L1500: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 s -- in co.sena.iam.adapter.in.rest.M2mTokenControllerTest
+L1544: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 s -- in co.sena.iam.adapter.in.rest.PasswordResetControllerTest
+L1996: [INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.242 s -- in co.sena.iam.adapter.in.rest.RbacControllerTest
+L2023: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.366 s -- in co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest
+L2434: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.770 s -- in co.sena.iam.adapter.in.rest.ReportControllerTest
+L2832: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.966 s -- in co.sena.iam.adapter.in.rest.SessionControllerTest
+L2839: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.690 s -- in co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest
+L2841: [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s -- in co.sena.iam.adapter.out.messaging.OutboxRelayTest
+L2843: [INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.726 s -- in co.sena.iam.adapter.out.security.JwtAccessTokenTest
+L2847: [INFO] Tests run: 90, Failures: 0, Errors: 0, Skipped: 0
+L2947: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.44 s -- in co.sena.iam.api.IamApiApplicationContextTest
+L2991: [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.531 s -- in co.sena.iam.api.IamApiApplicationSmokeTest
+L2995: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+L3000: [INFO] iam-service ........................................ SUCCESS [  0.078 s]
+L3001: [INFO] iam-core ........................................... SUCCESS [ 11.050 s]
+L3002: [INFO] iam-contracts ...................................... SUCCESS [ 14.528 s]
+L3003: [INFO] iam-adapters ....................................... SUCCESS [ 42.900 s]
+L3004: [INFO] iam-api ............................................ SUCCESS [ 30.335 s]
+L3006: [INFO] BUILD SUCCESS
+L3008: [INFO] Total time:  01:39 min
+L3009: [INFO] Finished at: 2026-10-20T22:03:22-05:00
+
+SOURCE L02: iam-integration-package.log
+L223: [INFO] iam-service ........................................ SUCCESS [  0.069 s]
+L224: [INFO] iam-core ........................................... SUCCESS [  3.042 s]
+L225: [INFO] iam-contracts ...................................... SUCCESS [ 12.848 s]
+L226: [INFO] iam-adapters ....................................... SUCCESS [  7.191 s]
+L227: [INFO] iam-api ............................................ SUCCESS [  5.917 s]
+L229: [INFO] BUILD SUCCESS
+L231: [INFO] Total time:  29.704 s
+L232: [INFO] Finished at: 2026-10-20T22:04:33-05:00

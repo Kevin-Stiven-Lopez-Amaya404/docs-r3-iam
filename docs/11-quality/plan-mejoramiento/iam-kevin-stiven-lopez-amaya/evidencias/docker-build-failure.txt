@@ -1,0 +1,7 @@
+Extracto de evidencia existente. Seleccion de lineas sin URLs firmadas ni fragmentos de sus parametros. No nueva ejecucion.
+SOURCE L09: iam-delivery-docker.log
+L17: #3 [internal] load metadata for docker.io/library/eclipse-temurin:21-jre
+L25: lookup production.cloudfront.docker.com: no such host
+L33:   13 | >>> FROM eclipse-temurin:21-jre
+L37: ERROR: failed to build: failed to solve: eclipse-temurin:21-jre: failed to resolve source metadata for
+L45: connecting to production.cloudfront.docker.com:443: dial tcp: lookup production.cloudfront.docker.com: no such host

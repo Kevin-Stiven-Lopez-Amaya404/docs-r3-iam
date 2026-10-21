@@ -1,0 +1,13 @@
+import java.security.KeyPairGenerator;
+import java.util.Base64;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class IamMfeFixture {
+    public static void main(String[] args) throws Exception {
+        var generator = KeyPairGenerator.getInstance("RSA");
+        generator.initialize(2048);
+        var privateKey = Base64.getEncoder().encodeToString(generator.generateKeyPair().getPrivate().getEncoded());
+        var hash = new BCryptPasswordEncoder().encode(System.getenv("IAM_MFE_TEST_PASSWORD"));
+        System.out.print("{\"privateKey\":\"" + privateKey + "\",\"passwordHash\":\"" + hash + "\"}");
+    }
+}

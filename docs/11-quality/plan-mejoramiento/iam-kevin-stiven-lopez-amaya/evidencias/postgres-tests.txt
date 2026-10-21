@@ -1,0 +1,19 @@
+Extracto de evidencia existente. Seleccion de lineas, no nueva ejecucion. Numeros L corresponden al archivo fuente.
+
+SOURCE L08: iam-delivery-postgres.log
+L417: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.82 s -- in co.sena.iam.api.AuthorizationPostgresIT
+L771: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.83 s -- in co.sena.iam.api.LoginAuditReportPostgresIT
+L1222: [INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.147 s -- in co.sena.iam.api.LoginPostgresIT
+L1390: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.595 s -- in co.sena.iam.api.PasswordResetPostgresIT
+L1764: [INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.008 s -- in co.sena.iam.api.RbacCatalogPostgresIT
+L2221: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.243 s -- in co.sena.iam.api.ScopeOverridePostgresIT
+L2514: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.107 s -- in co.sena.iam.api.SessionPostgresIT
+L3532: [INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.885 s -- in co.sena.iam.api.UserManagementPostgresIT
+L3543: [INFO] iam-service ........................................ SUCCESS [  0.915 s]
+L3544: [INFO] iam-core ........................................... SUCCESS [  1.763 s]
+L3545: [INFO] iam-contracts ...................................... SUCCESS [ 11.954 s]
+L3546: [INFO] iam-adapters ....................................... SUCCESS [  8.067 s]
+L3547: [INFO] iam-api ............................................ SUCCESS [01:22 min]
+L3549: [INFO] BUILD SUCCESS
+L3551: [INFO] Total time:  01:46 min
+L3552: [INFO] Finished at: 2026-10-20T22:11:22-05:00

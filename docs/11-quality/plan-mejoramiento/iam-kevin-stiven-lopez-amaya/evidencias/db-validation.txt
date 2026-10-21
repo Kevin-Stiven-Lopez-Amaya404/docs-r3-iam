@@ -1,0 +1,34 @@
+Extracto de evidencia existente. Seleccion de lineas, no nueva ejecucion. Numeros L corresponden al archivo fuente.
+
+SOURCE L03: iam-delivery-migration.log
+L62: UPDATE SUMMARY
+L63: Run:                         37
+L64: Previously run:               0
+L65: Filtered out:                 0
+L67: Total change sets:           37
+L69: Liquibase: Update has been successful. Rows affected: 314
+L70: Liquibase command 'update' was executed successfully.
+
+SOURCE L04: iam-db-validate.log
+L24: No validation errors found.
+L25: Liquibase command 'validate' was executed successfully.
+
+SOURCE L05: iam-db-incremental.log
+L24: Database is up to date, no changesets to execute
+L26: UPDATE SUMMARY
+L27: Run:                          0
+L28: Previously run:              37
+L29: Filtered out:                 0
+L31: Total change sets:           37
+L33: Liquibase command 'update' was executed successfully.
+
+SOURCE L06: iam-db-preflight.log
+L1: BEGIN
+L2: DO
+L3: docker : NOTICE:  IAM integration preflight passed: schema, columns, indexes, seeds and group privileges
+L10: ROLLBACK
+
+SOURCE L07: iam-db-preflight-negative.log
+L1: BEGIN
+L2: docker : ERROR:  Missing IAM table: identity.outbox
+L9: CONTEXT:  PL/pgSQL function inline_code_block line 29 at RAISE
