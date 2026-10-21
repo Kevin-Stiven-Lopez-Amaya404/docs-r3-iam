@@ -1,0 +1,36 @@
+import { createServer } from "vite";
+
+const server = await createServer({
+  server: { host: "127.0.0.1", port: 15101, strictPort: true },
+  logLevel: "error"
+});
+try {
+  await server.listen();
+  const { createAuthApi } = await server.ssrLoadModule("/src/adapter/out/auth.ts");
+  let correlationPreserved = false;
+  const api = createAuthApi({
+    baseUrl: "http://127.0.0.1:15101/api/v1",
+    fetchImpl: async (url, init) => {
+      const result = await fetch(url, init);
+      correlationPreserved = result.headers.get("X-Correlation-Id")
+        === new Headers(init.headers).get("X-Correlation-Id");
+      return result;
+    }
+  });
+  const session = await api.login(process.env.IAM_MFE_TEST_EMAIL, process.env.IAM_MFE_TEST_PASSWORD);
+  if (session.user.email !== process.env.IAM_MFE_TEST_EMAIL || !correlationPreserved) {
+    throw new Error("Real login or request-correlation check failed.");
+  }
+  const me = await fetch("http://127.0.0.1:15101/api/v1/auth/me", {
+    headers: { Authorization: `Bearer ${session.access_token}` }
+  });
+  const identity = await me.json();
+  if (me.status !== 200 || identity.id !== session.user.id) {
+    throw new Error("Authenticated identity check failed.");
+  }
+  console.log(JSON.stringify({ login: 200, me: me.status, correlationPreserved, identityMatches: true }));
+} finally {
+  // Let federation finish its asynchronous type-generation job before shutdown.
+  await new Promise((resolve) => setTimeout(resolve, 12000));
+  await server.close();
+}

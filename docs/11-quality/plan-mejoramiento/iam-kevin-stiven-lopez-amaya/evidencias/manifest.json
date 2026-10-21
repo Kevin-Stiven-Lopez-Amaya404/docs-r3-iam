@@ -1,0 +1,829 @@
+{
+    "schemaVersion":  1,
+    "preparedAtUtc":  "2026-10-21T15:47:43.5510423Z",
+    "consultationCutoff":  "2026-10-21 America/Bogota",
+    "purpose":  "Anexos locales preparados para revision documental IAM; no nueva ejecucion ni certificacion de cierre",
+    "sourcePathConvention":  "Rutas originales relativas al espacio local design-software-iam-service; algunos originales ignorados por Git, no incluidos completos",
+    "sources":  [
+                    {
+                        "repository":  "code-sena/design-software-docs",
+                        "ref":  "main",
+                        "commit":  "917d7f6b514a4ff48d86f7ae78273f06e0df8a1c"
+                    },
+                    {
+                        "repository":  "code-sena/design-software-iam-service",
+                        "base":  "6987e0fa64628b5602969572d34a900f022ae891",
+                        "ref":  "r3-observability-delivery-dev",
+                        "commit":  "7c837e0824263cef0aef89f807731adca839f25e",
+                        "pr":  "https://github.com/code-sena/design-software-iam-service/pull/43",
+                        "prState":  "open, unmerged",
+                        "ci":  "https://github.com/code-sena/design-software-iam-service/actions/runs/39537700071",
+                        "ciConclusion":  "success; 186 pass, 55 integration skipped"
+                    },
+                    {
+                        "repository":  "code-sena/design-software-iam-db",
+                        "base":  "a1e01a42692da77269568f0ef49b2e4d3d035fa3",
+                        "ref":  "r3-iam-db-integration-dev",
+                        "commit":  "7fe2798cf5d5c90b6e51509e6dd052f1929f81b8",
+                        "pr":  "https://github.com/code-sena/design-software-iam-db/pull/79",
+                        "prState":  "open, unmerged",
+                        "ci":  "https://github.com/code-sena/design-software-iam-db/actions/runs/39538261790",
+                        "ciConclusion":  "success; validate, clean/repeat update, preflight"
+                    },
+                    {
+                        "repository":  "code-sena/design-software-iam-mfe",
+                        "base":  "8e94e1bd281ca12010fac754e7c376f2d078c20f",
+                        "ref":  "r3-iam-mfe-integration-dev",
+                        "commit":  "e73e844bebebb64b99bfce24a908926f0e4cf76b",
+                        "pr":  "https://github.com/code-sena/design-software-iam-mfe/pull/10",
+                        "prState":  "open, unmerged",
+                        "ci":  "https://github.com/code-sena/design-software-iam-mfe/actions/runs/39540502857",
+                        "ciConclusion":  "failure: private dependency access secret empty; later steps skipped"
+                    },
+                    {
+                        "repository":  "code-sena/design-software-design-system",
+                        "commit":  "b1c8b763b6f812173a11b232e35fed15b4c2f62b"
+                    },
+                    {
+                        "repository":  "code-sena/design-software-frontend-platform",
+                        "commit":  "be8bd79fa0e5e33955c481d928c3867077ff851e"
+                    }
+                ],
+    "localXmlSummary":  [
+                            {
+                                "group":  "iam-core, surefire-reports",
+                                "files":  21,
+                                "tests":  92,
+                                "failures":  0,
+                                "errors":  0,
+                                "skipped":  0
+                            },
+                            {
+                                "group":  "iam-adapters, surefire-reports",
+                                "files":  15,
+                                "tests":  90,
+                                "failures":  0,
+                                "errors":  0,
+                                "skipped":  0
+                            },
+                            {
+                                "group":  "iam-api, surefire-reports",
+                                "files":  2,
+                                "tests":  4,
+                                "failures":  0,
+                                "errors":  0,
+                                "skipped":  0
+                            },
+                            {
+                                "group":  "iam-api, failsafe-reports",
+                                "files":  9,
+                                "tests":  55,
+                                "failures":  0,
+                                "errors":  0,
+                                "skipped":  1
+                            }
+                        ],
+    "annexes":  [
+                    {
+                        "path":  "service-tests.txt",
+                        "bytes":  6882,
+                        "sha256":  "b6b1570f6636170a9a33e04afe303800c484956c9703170a38f7100a773d867c",
+                        "sources":  [
+                                        {
+                                            "id":  "L01",
+                                            "path":  "iam-integration-test.log",
+                                            "sha256":  "49e211ffdb054d5eef9447ce31bb6cb2bbbe6382d066d8c068889f54536bc52c",
+                                            "selectedLines":  [
+                                                                  44,
+                                                                  46,
+                                                                  48,
+                                                                  50,
+                                                                  52,
+                                                                  54,
+                                                                  56,
+                                                                  58,
+                                                                  60,
+                                                                  62,
+                                                                  64,
+                                                                  66,
+                                                                  68,
+                                                                  70,
+                                                                  72,
+                                                                  74,
+                                                                  76,
+                                                                  78,
+                                                                  80,
+                                                                  82,
+                                                                  84,
+                                                                  88,
+                                                                  240,
+                                                                  669,
+                                                                  671,
+                                                                  1061,
+                                                                  1460,
+                                                                  1462,
+                                                                  1500,
+                                                                  1544,
+                                                                  1996,
+                                                                  2023,
+                                                                  2434,
+                                                                  2832,
+                                                                  2839,
+                                                                  2841,
+                                                                  2843,
+                                                                  2847,
+                                                                  2947,
+                                                                  2991,
+                                                                  2995,
+                                                                  3000,
+                                                                  3001,
+                                                                  3002,
+                                                                  3003,
+                                                                  3004,
+                                                                  3006,
+                                                                  3008,
+                                                                  3009
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L02",
+                                            "path":  "iam-integration-package.log",
+                                            "sha256":  "8a373d2eff6945974a8b774981b43fefdd3ea88efb455d55eb979f3caef83e3e",
+                                            "selectedLines":  [
+                                                                  223,
+                                                                  224,
+                                                                  225,
+                                                                  226,
+                                                                  227,
+                                                                  229,
+                                                                  231,
+                                                                  232
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion por patron de resumen; prefijo con numero de linea original; elimina escapes ANSI; UTF-8 sin BOM. No incluye configuracion ni cuerpos HTTP."
+                    },
+                    {
+                        "path":  "postgres-tests.txt",
+                        "bytes":  1752,
+                        "sha256":  "276ca4f8a94c6dfc2ba0ad57ca7af7fdf31aa0c81f93fd809949d71f2f6f3b87",
+                        "sources":  [
+                                        {
+                                            "id":  "L08",
+                                            "path":  "iam-delivery-postgres.log",
+                                            "sha256":  "68b38b7aba548badadf306674ed34fbd55bb46a3e2a4f033c243239de92e1fc2",
+                                            "selectedLines":  [
+                                                                  417,
+                                                                  771,
+                                                                  1222,
+                                                                  1390,
+                                                                  1764,
+                                                                  2221,
+                                                                  2514,
+                                                                  3532,
+                                                                  3543,
+                                                                  3544,
+                                                                  3545,
+                                                                  3546,
+                                                                  3547,
+                                                                  3549,
+                                                                  3551,
+                                                                  3552
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion por patron de resumen; prefijo con numero de linea original; elimina escapes ANSI; UTF-8 sin BOM. No incluye configuracion ni cuerpos HTTP."
+                    },
+                    {
+                        "path":  "db-validation.txt",
+                        "bytes":  1240,
+                        "sha256":  "8a1518753ea2c7fa2e0ed87d1766e7a73d0f0ec5badbf2db50b8a54e82a0a51b",
+                        "sources":  [
+                                        {
+                                            "id":  "L03",
+                                            "path":  "iam-delivery-migration.log",
+                                            "sha256":  "5fc7181f445d486dee57800d4fcba931e4021a7e871cc55906341e0566897c51",
+                                            "selectedLines":  [
+                                                                  62,
+                                                                  63,
+                                                                  64,
+                                                                  65,
+                                                                  67,
+                                                                  69,
+                                                                  70
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L04",
+                                            "path":  "iam-db-validate.log",
+                                            "sha256":  "43bfe3b9c18c83fcb6a1c7133d538ac3f9a2d5ea968bb37a94c47fd1179ff986",
+                                            "selectedLines":  [
+                                                                  24,
+                                                                  25
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L05",
+                                            "path":  "iam-db-incremental.log",
+                                            "sha256":  "77f06ac4d8e2b5e8e0521f2ba4457e536146eeaf8c5d9c88e1c2965814d7cffa",
+                                            "selectedLines":  [
+                                                                  24,
+                                                                  26,
+                                                                  27,
+                                                                  28,
+                                                                  29,
+                                                                  31,
+                                                                  33
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L06",
+                                            "path":  "iam-db-preflight.log",
+                                            "sha256":  "c6c116fabcab8b35f303550ec13929fa9d4f51ebed0cb612a9aebfd84b8e2051",
+                                            "selectedLines":  [
+                                                                  1,
+                                                                  2,
+                                                                  3,
+                                                                  10
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L07",
+                                            "path":  "iam-db-preflight-negative.log",
+                                            "sha256":  "2dc2d88fa6e0e14279500f75ee45833db16a77f8966dc1a14f638e351b689661",
+                                            "selectedLines":  [
+                                                                  1,
+                                                                  2,
+                                                                  9
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion por patron de resumen; prefijo con numero de linea original; elimina escapes ANSI; UTF-8 sin BOM. No incluye configuracion ni cuerpos HTTP."
+                    },
+                    {
+                        "path":  "mfe-tests-build.txt",
+                        "bytes":  943,
+                        "sha256":  "b66ce62444795cbf8ba19c5fc1a406f9aad173d160380664ca8c42747a39c921",
+                        "sources":  [
+                                        {
+                                            "id":  "L10",
+                                            "path":  "iam-mfe-tests.log",
+                                            "sha256":  "c391db9e66c9416f70e05e173640e9e3d065a6da14cdc6cb5e98827173480717",
+                                            "selectedLines":  [
+                                                                  2,
+                                                                  3,
+                                                                  21,
+                                                                  22,
+                                                                  23,
+                                                                  24
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L11",
+                                            "path":  "iam-mfe-build.log",
+                                            "sha256":  "3a1e657bb9aac3f4f9f18895422a290f5809171d594148544a77236c3b96a059",
+                                            "selectedLines":  [
+                                                                  2,
+                                                                  3,
+                                                                  20,
+                                                                  43,
+                                                                  49
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L13",
+                                            "path":  "iam-mfe-install.log",
+                                            "sha256":  "cd8c1d6f8a2b27f3cbf35ac02aa0c9deab6a11fcef88a8b57fcfbb77e289c2c0",
+                                            "selectedLines":  [
+                                                                  2
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L14",
+                                            "path":  "iam-mfe-typecheck.log",
+                                            "sha256":  "eec6bb629bca1c3c1b665a317d57c6452447248decbb0f3da49ce2f19565a705",
+                                            "selectedLines":  [
+                                                                  2,
+                                                                  3
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L15",
+                                            "path":  "iam-mfe-lint.log",
+                                            "sha256":  "c1114290b1e1312d1681062f2e9462ea2646f64ed44ec923df3a418177806b58",
+                                            "selectedLines":  [
+                                                                  2,
+                                                                  3
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion por patron de resumen; prefijo con numero de linea original; elimina escapes ANSI; UTF-8 sin BOM. No incluye configuracion ni cuerpos HTTP."
+                    },
+                    {
+                        "path":  "docker-build-failure.txt",
+                        "bytes":  570,
+                        "sha256":  "f07946839ed6bfd4297f775dad9f42476f299e1a382d2a1b12a30a84914d9164",
+                        "sources":  [
+                                        {
+                                            "id":  "L09",
+                                            "path":  "iam-delivery-docker.log",
+                                            "sha256":  "8a6f946a2e947300e72c02081bab24c9f37743adfed4ea0b348c0b289b8a1628",
+                                            "selectedLines":  [
+                                                                  17,
+                                                                  25,
+                                                                  33,
+                                                                  37,
+                                                                  45
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion de cinco lineas por numero original; excluye URLs firmadas, parametros y sus fragmentos; prefijo L; UTF-8 sin BOM. Elimina espacios al final de las lineas seleccionadas. Normaliza CRLF a LF para hash portable."
+                    },
+                    {
+                        "path":  "mfe-fixture-cleanup.txt",
+                        "bytes":  251,
+                        "sha256":  "e973562209001888cc9a7fab4ba6a541ea774b879888e5fc9ce9b50472717b91",
+                        "sources":  [
+                                        {
+                                            "id":  "L16",
+                                            "path":  "iam-mfe-fixture.log",
+                                            "sha256":  "973b5495ae61958053d3a3a2a7c2beb3513006df15be5947f1e10e176299e408",
+                                            "selectedLines":  [
+                                                                  1,
+                                                                  2
+                                                              ]
+                                        },
+                                        {
+                                            "id":  "L17",
+                                            "path":  "iam-mfe-cleanup.log",
+                                            "sha256":  "1d91d98677fc72f2fa53bbcf07eae897c4481be334929c01ef6f5a12e6e0fd51",
+                                            "selectedLines":  [
+                                                                  1,
+                                                                  2,
+                                                                  3
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion por patron de resumen; prefijo con numero de linea original; elimina escapes ANSI; UTF-8 sin BOM. No incluye configuracion ni cuerpos HTTP."
+                    },
+                    {
+                        "path":  "runtime-smoke-summary.json",
+                        "bytes":  139,
+                        "sha256":  "0ab386e3391f71acad1cb9cbf2157f66eaa4e6ea1bdd12a46e6962dedb920f89",
+                        "sources":  [
+                                        {
+                                            "id":  "L18",
+                                            "path":  "iam-integration/target/runtime-smoke/summary.json",
+                                            "sha256":  "55dd690087159320cfcb0a2bef8d7f252b11ea79ee288cd59dbbbb96ff6b8e63"
+                                        }
+                                    ],
+                        "transformation":  "Transcodificacion del JSON original UTF-16LE a UTF-8 sin BOM; mismo contenido, no nueva ejecucion ni captura HTTP completa. Normaliza CRLF a LF para hash portable."
+                    },
+                    {
+                        "path":  "http-smoke-summary.json",
+                        "bytes":  74,
+                        "sha256":  "851ec3de394380e3429470ddbdefdec2bc2faf3f947cea9c89caba224f27dcd9",
+                        "sources":  [
+                                        {
+                                            "id":  "L12",
+                                            "path":  "iam-mfe-http-smoke.log",
+                                            "sha256":  "683beacbeeee7fb300aa097019fc2ee49ed4cfcccfb7847b22b9e044afc8cd50",
+                                            "selectedLines":  [
+                                                                  1
+                                                              ]
+                                        }
+                                    ],
+                        "transformation":  "Seleccion de linea JSON; UTF-8 sin BOM. login:200 es literal del driver, no status HTTP medido; me:200 si se aserta."
+                    },
+                    {
+                        "path":  "smoke-http-driver.ps1.txt",
+                        "bytes":  4874,
+                        "sha256":  "897912138f1e427d96559d397df430bb686c839734c978a36f80cf6d3785d6cf",
+                        "sources":  [
+                                        {
+                                            "id":  "L19",
+                                            "path":  "iam-integration/target/runtime-smoke/check-mfe-http.ps1",
+                                            "sha256":  "897912138f1e427d96559d397df430bb686c839734c978a36f80cf6d3785d6cf"
+                                        }
+                                    ],
+                        "transformation":  "Copia exacta del codigo local existente, renombrada .txt para consulta. Contiene rutas del equipo; no prueba por si sola ejecucion ni portabilidad."
+                    },
+                    {
+                        "path":  "smoke-http-adapter.mjs.txt",
+                        "bytes":  1492,
+                        "sha256":  "ebef8741feaf20c4b1e1b462add16d68885c6074758509fae6d818401c6969e6",
+                        "sources":  [
+                                        {
+                                            "id":  "L20",
+                                            "path":  "iam-mfe-integration/node_modules/.cache/iam-http-smoke.mjs",
+                                            "sha256":  "ebef8741feaf20c4b1e1b462add16d68885c6074758509fae6d818401c6969e6"
+                                        }
+                                    ],
+                        "transformation":  "Copia exacta del codigo local existente, renombrada .txt para consulta. Contiene rutas del equipo; no prueba por si sola ejecucion ni portabilidad."
+                    },
+                    {
+                        "path":  "smoke-fixture.java.txt",
+                        "bytes":  648,
+                        "sha256":  "c1c1f5dc254f33318a492a202641606bbe3bc1f0f1b514caaad2f5bc88a17fff",
+                        "sources":  [
+                                        {
+                                            "id":  "L22",
+                                            "path":  "iam-integration/target/runtime-smoke/IamMfeFixture.java",
+                                            "sha256":  "c1c1f5dc254f33318a492a202641606bbe3bc1f0f1b514caaad2f5bc88a17fff"
+                                        }
+                                    ],
+                        "transformation":  "Copia exacta del codigo local existente, renombrada .txt para consulta. Contiene rutas del equipo; no prueba por si sola ejecucion ni portabilidad."
+                    },
+                    {
+                        "path":  "service-test-results.json",
+                        "bytes":  117009,
+                        "sha256":  "8437eb356a892194307291fb4d0039452f7b2df996602f00db759280454a35e7",
+                        "sources":  [
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.AssignUserRoleTest.xml",
+                                            "sha256":  "e4af5420d0b0d6f3d1e504867ac334bfd8356dec3cf27c44f75f40c8243847fa"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.AuthenticateUserTest.xml",
+                                            "sha256":  "633d4a06174374ac7600930d560d4b19736902aaa5375923582c66240a2c232b"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ConfirmPasswordResetTest.xml",
+                                            "sha256":  "1d177e4a71fed997273b683d6536262e5ba43ae4fe54df88709e17102b341f2d"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.CreateUserTest.xml",
+                                            "sha256":  "37ddc9df57a0a0d58cba0fab28fa73ed1382dfe33b22a003d94622183b7d9bf3"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.DeactivateUserTest.xml",
+                                            "sha256":  "380db288bd814e008dd4e9b0aa1713b309aff35c402bf09d7a8fc0bdc2ac6d74"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.EvaluateAuthorizationTest.xml",
+                                            "sha256":  "1de251bcfaa321d93420f760869ec026980f748fa5e89feae286904da4858cd8"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.GetCurrentUserTest.xml",
+                                            "sha256":  "a119aaf89d4d988583938bb0b21c7bb116bf7318b6e9e1486ff7a4728863cf66"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.GetLoginAuditReportTest.xml",
+                                            "sha256":  "95001080ffe3379492ac28a5110aeea7f3fdedca6484f48dd8cb811061c0cb9c"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.GrantScopeOverrideTest.xml",
+                                            "sha256":  "8cced4e26ee7b11e2cfc9cd766192e8772950f6f97a997833c59115c5a765504"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListModulesTest.xml",
+                                            "sha256":  "0f0bc72c89c36a5aaa9f0bdbc37b0fc94ea56efa6a16737e87af75d4b2c5e45b"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListRoleFeaturesTest.xml",
+                                            "sha256":  "46b901aba3eaf20206deaae1a2d6b56d5e21de6a07b8dc7dbbb13e37d948d5e7"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListRolesTest.xml",
+                                            "sha256":  "fe368a37ccdeb70b8456420c8c9d8d56926cfaa3256d3662bf38ba500b7fe87c"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListScopeOverridesTest.xml",
+                                            "sha256":  "9e47a4d509220f04794ad20b2d173abb644e18856a882304edac01fca5366558"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.ListUserSessionsTest.xml",
+                                            "sha256":  "37b2584bfc9bdf1e7a2f41f989967a2cb4d67045d6ed911b471bedb9cf4f371a"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.LogoutTest.xml",
+                                            "sha256":  "aff66ce33795c07ab9c03c26766b14875f8c3e987a05c0d682c9986cd25a8795"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RefreshAccessTokenTest.xml",
+                                            "sha256":  "2dcd1999bad8a2b912dd8a9eff825a8863da57862aa7f40b368b4f6864bafee1"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RequestPasswordResetTest.xml",
+                                            "sha256":  "efb1bf1d7cab29f86dc4059f3847d0f6f5e2467f9b7175e7062149741a44eda2"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RevokeScopeOverrideTest.xml",
+                                            "sha256":  "f9ba4ca87c28c97d20c3ed0ce5bf6f3be0e3bed3bbda8ee8ae5da09663c454b8"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.application.usecase.RevokeUserSessionTest.xml",
+                                            "sha256":  "9f11fdd0c328e979f2d66fa128c731a5cec021023078f249e278d4aaba2f4578"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.domain.model.LockoutPolicyTest.xml",
+                                            "sha256":  "c294bfc0f0c0f7d87b42e7d7596a4e05e1026cd25d77e4fc8026128127034dfc"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-core/target/surefire-reports/TEST-co.sena.iam.domain.service.AuthorizationPolicyTest.xml",
+                                            "sha256":  "b57696f76662492ab67c1343860ded71c79605a472b3842ce11a3bffb0a5c574"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.ApiErrorsTest.xml",
+                                            "sha256":  "d6ce6c22bd4d43c2364736d5c576adfe5a56c9438dcea60974b01863289cafa3"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.AuthControllerTest.xml",
+                                            "sha256":  "f3f75f8d00d49c455544e0f308ff4c29fe4ec1ef57f82ca77fab72f61461f4cf"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.CorrelationIdFilterTest.xml",
+                                            "sha256":  "e0d2e73afd97a1481c8b3d2b5ff0907abe36b2b9b5e418edc393e5807a7473a8"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.HealthControllerBrokerTest.xml",
+                                            "sha256":  "e756300e74c5b19a3bdbcf2b71e5f5e7d4dd59461c8ba135eac9d95b52c52f42"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.HealthControllerTest.xml",
+                                            "sha256":  "40987742772d3fbec357ffadb3f2b6be20c7ebe004d6a49638edad76978bccf3"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.JwksControllerTest.xml",
+                                            "sha256":  "362d5c1a5d8e94f97b7bf05ff787a411c097ce0e87b2bd64d4ee395b093ad7b7"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.M2mTokenControllerTest.xml",
+                                            "sha256":  "edebbfe6a68d5828f65fff7ebd2f48b7e96d16513ce08003f304c4e6fd23d405"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.PasswordResetControllerTest.xml",
+                                            "sha256":  "fc21ae48678258c8df23eda08cdcef4fb81fc99dd1e305982a935390801a2cb9"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.RbacControllerTest.xml",
+                                            "sha256":  "c71aebeb1432a652758f110f1b9abe0479095a82a1168367544f811e358a843d"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest.xml",
+                                            "sha256":  "2bc606faf8dc37a1614438769238f4b69f7e097f0eedb615687b191b3dcf0afb"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.ReportControllerTest.xml",
+                                            "sha256":  "82cc96872ace73123c0e42927a3168a2bb61e123eca049eabba6bd734a0f93a1"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.in.rest.SessionControllerTest.xml",
+                                            "sha256":  "c488a412cfb5b768536ed4b64eb07273ec911eef612246c0cd4456ab0e51addc"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest.xml",
+                                            "sha256":  "0b542b5d43ec48aedbe88a13fc4c653d8904cc389af273587ed1bfed6744242d"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.out.messaging.OutboxRelayTest.xml",
+                                            "sha256":  "328f3e19b07fb4c73859b33aaff3ce28172a64448a6bcdb9802ab897e40f7f11"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-adapters/target/surefire-reports/TEST-co.sena.iam.adapter.out.security.JwtAccessTokenTest.xml",
+                                            "sha256":  "0a4300ec8a69e294978332f8526b3d9f6bd3c87f823360c0bb5aa26a73c2e9de"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/surefire-reports/TEST-co.sena.iam.api.IamApiApplicationContextTest.xml",
+                                            "sha256":  "9f6281694ba702626c1146ce8b342b0ea111458b789afbb7d534f1d8cdaee5b5"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/surefire-reports/TEST-co.sena.iam.api.IamApiApplicationSmokeTest.xml",
+                                            "sha256":  "36438d050a6dd5cf6c2af0431766ce576fe2de084e566a727c8c315f4ff3fec3"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.AuthorizationPostgresIT.xml",
+                                            "sha256":  "7c2a715ae1e6b74647dbc95badf2f142f4c0dc53b0a6b03442d0910ebf7f86ba"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.LoginAuditReportPostgresIT.xml",
+                                            "sha256":  "6bd0f52c493e705434b954ad03af5f8af40f5f421aeb1ca9669d9de29000bbb2"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.LoginPostgresIT.xml",
+                                            "sha256":  "e332c6ed64ba8d8d98687e16ac33d0e087b320ff11fa4ff69c0c2c9a1c94d8f6"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.OutboxRelayPostgresIT.xml",
+                                            "sha256":  "10d56ccbee0d7bc5424e560374a429f245af184ed4e3d36d40f58c4047f69e17"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.PasswordResetPostgresIT.xml",
+                                            "sha256":  "85739f19aecdd4952dffe78c03a0c5e34393efcbca567f6eefc4b400ce24c0a9"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.RbacCatalogPostgresIT.xml",
+                                            "sha256":  "bd06623c1e725d7dc98c63747588b0214045a9f6c8693daf7f3720caa749482f"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.ScopeOverridePostgresIT.xml",
+                                            "sha256":  "e4e5600bcb431eb6def0eb9d016be9891abdb99e68e5ff3dceb7633334b1ab51"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.SessionPostgresIT.xml",
+                                            "sha256":  "66ba59b6d9d3e22f7ba10ad8cf6a12e752fd39c89313f88eaf689d546c8eeb9e"
+                                        },
+                                        {
+                                            "path":  "iam-integration/iam-api/target/failsafe-reports/TEST-co.sena.iam.api.UserManagementPostgresIT.xml",
+                                            "sha256":  "7509429de8f593f96ed51c617ca01146734aa663d03971502c0cdf6e7be717ed"
+                                        }
+                                    ],
+                        "transformation":  "Extrae atributos de suite y nombre/clase/estado de cada caso de 47 XML; excluye properties, system-out, system-err y detalles de error. UTF-8 sin BOM. Normaliza CRLF a LF para hash portable."
+                    },
+                    {
+                        "path":  "remote-status.json",
+                        "bytes":  2977,
+                        "sha256":  "b518aafb57ebfe79c2dee29ad99d3264e208de02eee256df3ce88a86742462ec",
+                        "sources":  [
+                                        {
+                                            "repository":  "code-sena/design-software-iam-service",
+                                            "pullRequest":  "https://github.com/code-sena/design-software-iam-service/pull/43",
+                                            "workflowRun":  "https://github.com/code-sena/design-software-iam-service/actions/runs/39537700071"
+                                        },
+                                        {
+                                            "repository":  "code-sena/design-software-iam-db",
+                                            "pullRequest":  "https://github.com/code-sena/design-software-iam-db/pull/79",
+                                            "workflowRun":  "https://github.com/code-sena/design-software-iam-db/actions/runs/39538261790"
+                                        },
+                                        {
+                                            "repository":  "code-sena/design-software-iam-mfe",
+                                            "pullRequest":  "https://github.com/code-sena/design-software-iam-mfe/pull/10",
+                                            "workflowRun":  "https://github.com/code-sena/design-software-iam-mfe/actions/runs/39540502857"
+                                        }
+                                    ],
+                        "transformation":  "Seleccion de metadatos GitHub consultados en fecha UTC incluida; sin cuerpos, credenciales ni logs de ejecucion."
+                    }
+                ],
+    "limitations":  [
+                        "La publicacion en GitHub no se acredita por la existencia de estos archivos locales.",
+                        "El hash prueba identidad del archivo, no autoria o fecha de ejecucion.",
+                        "No se localizaron exit codes historicos completos de lint/typecheck ni salida SQL historica separada de los tres conteos del smoke.",
+                        "login:200 en el resumen HTTP es literal; el driver exige sesion valida y aserta me.status===200.",
+                        "Los drivers conservados dependen de rutas/configuracion local y no se ejecutaron en esta revision.",
+                        "Los XML estan transformados para excluir entorno y salida; no son los XML originales ni el artefacto remoto de CI."
+                    ],
+    "originalInventory":  [
+                              {
+                                  "id":  "L01",
+                                  "path":  "iam-integration-test.log",
+                                  "bytes":  889258,
+                                  "sha256":  "49e211ffdb054d5eef9447ce31bb6cb2bbbe6382d066d8c068889f54536bc52c",
+                                  "purpose":  "T01: 186 casos Service aprobados"
+                              },
+                              {
+                                  "id":  "L02",
+                                  "path":  "iam-integration-package.log",
+                                  "bytes":  47594,
+                                  "sha256":  "8a373d2eff6945974a8b774981b43fefdd3ea88efb455d55eb979f3caef83e3e",
+                                  "purpose":  "T02: empaquetado sin tests"
+                              },
+                              {
+                                  "id":  "L03",
+                                  "path":  "iam-delivery-migration.log",
+                                  "bytes":  10520,
+                                  "sha256":  "5fc7181f445d486dee57800d4fcba931e4021a7e871cc55906341e0566897c51",
+                                  "purpose":  "T03: 37 changesets limpios"
+                              },
+                              {
+                                  "id":  "L04",
+                                  "path":  "iam-db-validate.log",
+                                  "bytes":  2750,
+                                  "sha256":  "43bfe3b9c18c83fcb6a1c7133d538ac3f9a2d5ea968bb37a94c47fd1179ff986",
+                                  "purpose":  "T04: validate"
+                              },
+                              {
+                                  "id":  "L05",
+                                  "path":  "iam-db-incremental.log",
+                                  "bytes":  3160,
+                                  "sha256":  "77f06ac4d8e2b5e8e0521f2ba4457e536146eeaf8c5d9c88e1c2965814d7cffa",
+                                  "purpose":  "T04: segundo update sin incremento"
+                              },
+                              {
+                                  "id":  "L06",
+                                  "path":  "iam-db-preflight.log",
+                                  "bytes":  948,
+                                  "sha256":  "c6c116fabcab8b35f303550ec13929fa9d4f51ebed0cb612a9aebfd84b8e2051",
+                                  "purpose":  "T05: preflight positivo"
+                              },
+                              {
+                                  "id":  "L07",
+                                  "path":  "iam-db-preflight-negative.log",
+                                  "bytes":  942,
+                                  "sha256":  "2dc2d88fa6e0e14279500f75ee45833db16a77f8966dc1a14f638e351b689661",
+                                  "purpose":  "T05: fallo esperado por outbox ausente"
+                              },
+                              {
+                                  "id":  "L08",
+                                  "path":  "iam-delivery-postgres.log",
+                                  "bytes":  4670136,
+                                  "sha256":  "68b38b7aba548badadf306674ed34fbd55bb46a3e2a4f033c243239de92e1fc2",
+                                  "purpose":  "T06: 54 aprobados, 1 omitido; resultado final"
+                              },
+                              {
+                                  "id":  "L09",
+                                  "path":  "iam-delivery-docker.log",
+                                  "bytes":  20628,
+                                  "sha256":  "8a6f946a2e947300e72c02081bab24c9f37743adfed4ea0b348c0b289b8a1628",
+                                  "purpose":  "T08: build fallido DNS"
+                              },
+                              {
+                                  "id":  "L10",
+                                  "path":  "iam-mfe-tests.log",
+                                  "bytes":  2722,
+                                  "sha256":  "c391db9e66c9416f70e05e173640e9e3d065a6da14cdc6cb5e98827173480717",
+                                  "purpose":  "T10: 46 casos MFE aprobados"
+                              },
+                              {
+                                  "id":  "L11",
+                                  "path":  "iam-mfe-build.log",
+                                  "bytes":  12372,
+                                  "sha256":  "3a1e657bb9aac3f4f9f18895422a290f5809171d594148544a77236c3b96a059",
+                                  "purpose":  "T11: build federado local"
+                              },
+                              {
+                                  "id":  "L12",
+                                  "path":  "iam-mfe-http-smoke.log",
+                                  "bytes":  134,
+                                  "sha256":  "683beacbeeee7fb300aa097019fc2ee49ed4cfcccfb7847b22b9e044afc8cd50",
+                                  "purpose":  "T12: login satisfactorio; 200 de login es literal; me200, correlacion e identidad comprobados; tambien salida DTS"
+                              },
+                              {
+                                  "id":  "L13",
+                                  "path":  "iam-mfe-install.log",
+                                  "bytes":  60,
+                                  "sha256":  "cd8c1d6f8a2b27f3cbf35ac02aa0c9deab6a11fcef88a8b57fcfbb77e289c2c0",
+                                  "purpose":  "T09: 228 paquetes instalados"
+                              },
+                              {
+                                  "id":  "L14",
+                                  "path":  "iam-mfe-typecheck.log",
+                                  "bytes":  96,
+                                  "sha256":  "eec6bb629bca1c3c1b665a317d57c6452447248decbb0f3da49ce2f19565a705",
+                                  "purpose":  "T09: cabecera comando sin diagnosticos ni exit code explicito"
+                              },
+                              {
+                                  "id":  "L15",
+                                  "path":  "iam-mfe-lint.log",
+                                  "bytes":  78,
+                                  "sha256":  "c1114290b1e1312d1681062f2e9462ea2646f64ed44ec923df3a418177806b58",
+                                  "purpose":  "T09: cabecera comando sin diagnosticos ni exit code explicito"
+                              },
+                              {
+                                  "id":  "L16",
+                                  "path":  "iam-mfe-fixture.log",
+                                  "bytes":  50,
+                                  "sha256":  "973b5495ae61958053d3a3a2a7c2beb3513006df15be5947f1e10e176299e408",
+                                  "purpose":  "T12: INSERT; no identifica por si solo consultas/tablas"
+                              },
+                              {
+                                  "id":  "L17",
+                                  "path":  "iam-mfe-cleanup.log",
+                                  "bytes":  62,
+                                  "sha256":  "1d91d98677fc72f2fa53bbcf07eae897c4481be334929c01ef6f5a12e6e0fd51",
+                                  "purpose":  "T12: DELETE; no identifica por si solo consultas/tablas"
+                              },
+                              {
+                                  "id":  "L18",
+                                  "path":  "iam-integration/target/runtime-smoke/summary.json",
+                                  "bytes":  282,
+                                  "sha256":  "55dd690087159320cfcb0a2bef8d7f252b11ea79ee288cd59dbbbb96ff6b8e63",
+                                  "purpose":  "T07: resumen HTTP/metricas local"
+                              },
+                              {
+                                  "id":  "L19",
+                                  "path":  "iam-integration/target/runtime-smoke/check-mfe-http.ps1",
+                                  "bytes":  4874,
+                                  "sha256":  "897912138f1e427d96559d397df430bb686c839734c978a36f80cf6d3785d6cf",
+                                  "purpose":  "T12: driver con fixture, procesos, asercion SQL y limpieza"
+                              },
+                              {
+                                  "id":  "L20",
+                                  "path":  "iam-mfe-integration/node_modules/.cache/iam-http-smoke.mjs",
+                                  "bytes":  1492,
+                                  "sha256":  "ebef8741feaf20c4b1e1b462add16d68885c6074758509fae6d818401c6969e6",
+                                  "purpose":  "T12: driver Vite/adaptador/login/me; procedimiento, no salida SQL"
+                              },
+                              {
+                                  "id":  "L21",
+                                  "path":  "iam-integration-postgres.log",
+                                  "bytes":  3790222,
+                                  "sha256":  "cb6c73a8a014667a48a15db9635ea7deacac0565681c9412eeb15207dd429ed9",
+                                  "purpose":  "Intento anterior FALLIDO; no confundir con L08"
+                              },
+                              {
+                                  "id":  "L22",
+                                  "path":  "iam-integration/target/runtime-smoke/IamMfeFixture.java",
+                                  "bytes":  648,
+                                  "sha256":  "c1c1f5dc254f33318a492a202641606bbe3bc1f0f1b514caaad2f5bc88a17fff",
+                                  "purpose":  "T12: dependencia del driver; genera material efimero, no ejecutado en auditoria"
+                              },
+                              {
+                                  "id":  "L23",
+                                  "path":  "iam-mfe-http-smoke-stderr.log",
+                                  "bytes":  0,
+                                  "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                  "purpose":  "T12: stderr vacio, sin diagnosticos conservados; salida DTS esta en stdout L12"
+                              }
+                          ],
+    "publishedEncoding":  "UTF-8 without BOM; LF line endings enforced by scoped .gitattributes"
+}
