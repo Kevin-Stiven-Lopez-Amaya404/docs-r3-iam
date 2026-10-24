@@ -2,7 +2,7 @@
 
 > **Estado:** En revisión, con validaciones pendientes
 >
-> **Fecha de corte:** 24 de octubre de 2026, America/Bogota
+> **Fecha de corte:** 24 de octubre de 2026, 
 >
 > **Responsable:** Kevin Stiven López Amaya
 >
