@@ -7,6 +7,14 @@
 
 Seguimiento documental de planes individuales.
 
+## Entrega individual de Kevin Stiven López Amaya
+
+Según el Acta 02 y el Anexo de Aporte Individual revisados, la asignación R3 de Kevin corresponde a observabilidad en **IAM Service**. Los repositorios de IAM DB y IAM MFE que aparecen en el informe se relacionan como evidencia del contexto de integración; no se presentan como repositorios asignados individualmente a Kevin.
+
+- Repositorio de trabajo: [IAM Service](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev), rama `r3-observability-delivery-dev`.
+- Repositorio personal de documentación: [docs-r3-iam](https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-r3-iam/tree/docs/doc-import-workspace), rama `docs/doc-import-workspace`.
+- Repositorio documental del macroproyecto: [design-software-docs](https://github.com/code-sena/design-software-docs/tree/main/11-quality/plan-mejoramiento).
+
 ## Contenido
 
 - [R3: observabilidad de Monitoring](r3-observabilidad/README.md).

@@ -10,7 +10,18 @@ Este informe organiza el trabajo comprobable en **IAM Service, IAM DB e IAM MFE*
 
 Hay cambios implementados y publicados en ramas de entrega, resultados locales satisfactorios y documentación preparada. Esto respalda un informe de avance, pero **no acredita la aceptación completa del plan, la fusión de las entregas ni un despliegue integrado**. En la consulta del 21 de octubre, las tres PR seguían abiertas y sin fusionar; la HU de integración también estaba abierta.
 
-No se aportó un acta original firmada que permita identificar todas las obligaciones del plan individual. La cuenta Git identifica autoría de commits y publicación de PR; no demuestra quién ejecutó cada prueba. La asignación de la HU tampoco identifica automáticamente a quien realizó los cambios.
+El Acta 02 y el Anexo de Aporte Individual permiten identificar la asignación R3 de Kevin a IAM Service. La cuenta Git identifica autoría de commits y publicación de PR, pero no demuestra por sí sola quién ejecutó cada prueba local; la asignación de una HU tampoco identifica automáticamente al autor de todos los cambios relacionados.
+
+### Enlaces y alcance de la asignación individual (actualización al 2026-10-23)
+
+El **Acta 02 del Plan de Mejoramiento de Producto** y el **Anexo de Aporte Individual** revisados identifican a **Kevin Stiven López Amaya** con la asignación **R3 de observabilidad en IAM Service**. Por tanto, el repositorio de trabajo individual es [IAM Service, rama `r3-observability-delivery-dev`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev). El análisis de IAM DB y IAM MFE incluido en este informe documenta el contexto y la integración disponible; no implica que esos repositorios fueran asignados individualmente a Kevin.
+
+Repositorios documentales relacionados:
+
+- [Repositorio personal `docs-r3-iam`, rama `docs/doc-import-workspace`](https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-r3-iam/tree/docs/doc-import-workspace), donde se publicó esta documentación.
+- [Repositorio documental del macroproyecto `design-software-docs`](https://github.com/code-sena/design-software-docs/tree/main/11-quality/plan-mejoramiento), ubicación institucional de seguimiento.
+
+Los documentos fuente de la asignación fueron `ADSO-3145555-Acta02-Plan-Mejoramiento-Producto.pdf` y `ADSO-3145555-Anexo-Aporte-Individual.pdf`, proporcionados para revisión y no incluidos en este repositorio. Una persona revisora necesitará consultarlos por separado para verificar la asignación formal.
 
 ## Contenido
 
