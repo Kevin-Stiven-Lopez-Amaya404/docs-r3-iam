@@ -12,10 +12,13 @@
 | **Responsable QA** | No indicado en la evidencia disponible |
 | **Fecha de corte** | 23/10/2026, America/Bogota |
 | **Ambiente revisado** | GitHub (rama, PR y GitHub Actions) y ejecución Maven local documentada |
+| **Asignación individual** | Kevin Stiven López Amaya: R3 de observabilidad en IAM Service, según el Acta 02 y el Anexo de Aporte Individual revisados |
 | **PR** | [#43 — feat(iam): integrate request correlation and Prometheus metrics](https://github.com/code-sena/design-software-iam-service/pull/43) |
-| **Repositorio** | [`code-sena/design-software-iam-service`](https://github.com/code-sena/design-software-iam-service) |
+| **Repositorio de trabajo asignado** | [`code-sena/design-software-iam-service`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev), rama `r3-observability-delivery-dev` |
 | **Rama de referencia** | [`develop`](https://github.com/code-sena/design-software-iam-service/tree/develop), SHA `c7735cfc3135aad83091e2cfac5abe5809853c85` |
 | **Rama revisada** | [`r3-observability-delivery-dev`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev), SHA `5350e1495c7764a62cd47bc9e83063a7eeb68053` |
+| **Repositorio personal de documentación** | [`docs-r3-iam`, rama `docs/doc-import-workspace`](https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-r3-iam/tree/docs/doc-import-workspace) |
+| **Repositorio documental del macroproyecto** | [`design-software-docs`, plan de mejoramiento](https://github.com/code-sena/design-software-docs/tree/main/11-quality/plan-mejoramiento) |
 | **Documento de análisis relacionado** | [`validacion-alineacion-iam-develop-2026-10-23.md`](validacion-alineacion-iam-develop-2026-10-23.md) |
 
 ## 2. Revisión de la entrega de desarrollo
@@ -176,6 +179,9 @@ La alineación con `develop` está comprobada, la identidad de los commits fue c
 
 ### Evidencias y referencias
 
+- [Repositorio de trabajo asignado: IAM Service, rama `r3-observability-delivery-dev`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev)
+- [Repositorio personal de documentación: `docs-r3-iam`, rama `docs/doc-import-workspace`](https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-r3-iam/tree/docs/doc-import-workspace)
+- [Repositorio documental del macroproyecto: `design-software-docs`](https://github.com/code-sena/design-software-docs/tree/main/11-quality/plan-mejoramiento)
 - [Rama actual](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev)
 - [Comparación con `develop`](https://github.com/code-sena/design-software-iam-service/compare/develop...r3-observability-delivery-dev)
 - [PR #43](https://github.com/code-sena/design-software-iam-service/pull/43)
