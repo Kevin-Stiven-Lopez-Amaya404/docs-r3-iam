@@ -1,0 +1,65 @@
+Extracto de la ejecucion nueva de validacion de alineacion IAM.
+Source: C:/Users/PC/AppData/Local/Temp/iam-alignment-20261023-aa00b0f1/alignment-maven-verify-retry.log
+Source SHA256: c70b6b5d16cff759a5c9c8c6247d048ea8d624210848da78e2117396badb8817
+First failed attempt SHA256: 7a5889c19523adb6b320a6427bd9b168d0943232df6d8921eaa373f52676b635
+L corresponde al numero de linea del log de la repeticion satisfactoria.
+
+L49: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 s -- in co.sena.iam.application.usecase.AssignUserRoleTest
+L51: [INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s -- in co.sena.iam.application.usecase.AuthenticateUserTest
+L53: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 s -- in co.sena.iam.application.usecase.ConfirmPasswordResetTest
+L55: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 s -- in co.sena.iam.application.usecase.CreateUserTest
+L57: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in co.sena.iam.application.usecase.DeactivateUserTest
+L59: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in co.sena.iam.application.usecase.EvaluateAuthorizationTest
+L61: [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s -- in co.sena.iam.application.usecase.GetCurrentUserTest
+L63: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s -- in co.sena.iam.application.usecase.GetLoginAuditReportTest
+L65: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s -- in co.sena.iam.application.usecase.GrantScopeOverrideTest
+L67: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in co.sena.iam.application.usecase.ListModulesTest
+L69: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in co.sena.iam.application.usecase.ListRoleFeaturesTest
+L71: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in co.sena.iam.application.usecase.ListRolesTest
+L73: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in co.sena.iam.application.usecase.ListScopeOverridesTest
+L75: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in co.sena.iam.application.usecase.ListUserSessionsTest
+L77: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s -- in co.sena.iam.application.usecase.LogoutTest
+L79: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in co.sena.iam.application.usecase.RefreshAccessTokenTest
+L81: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in co.sena.iam.application.usecase.RequestPasswordResetTest
+L83: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in co.sena.iam.application.usecase.RevokeScopeOverrideTest
+L85: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in co.sena.iam.application.usecase.RevokeUserSessionTest
+L87: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in co.sena.iam.domain.model.LockoutPolicyTest
+L89: [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s -- in co.sena.iam.domain.service.AuthorizationPolicyTest
+L93: [INFO] Tests run: 96, Failures: 0, Errors: 0, Skipped: 0
+L260: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.760 s -- in co.sena.iam.adapter.in.rest.ApiErrorsTest
+L689: [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.20 s -- in co.sena.iam.adapter.in.rest.AuthControllerTest
+L691: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.270 s -- in co.sena.iam.adapter.in.rest.CorrelationIdFilterTest
+L1081: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.902 s -- in co.sena.iam.adapter.in.rest.HealthControllerBrokerTest
+L1480: [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.151 s -- in co.sena.iam.adapter.in.rest.HealthControllerTest
+L1482: [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.493 s -- in co.sena.iam.adapter.in.rest.JwksControllerTest
+L1520: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.980 s -- in co.sena.iam.adapter.in.rest.M2mTokenControllerTest
+L1564: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s -- in co.sena.iam.adapter.in.rest.PasswordResetControllerTest
+L2016: [INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.638 s -- in co.sena.iam.adapter.in.rest.RbacControllerTest
+L2043: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s -- in co.sena.iam.adapter.in.rest.RefreshAndLogoutControllerTest
+L2454: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.349 s -- in co.sena.iam.adapter.in.rest.ReportControllerTest
+L2897: [INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.310 s -- in co.sena.iam.adapter.in.rest.SessionControllerTest
+L2904: [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.393 s -- in co.sena.iam.adapter.out.client.ActorsActiveFichaClientTest
+L2906: [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s -- in co.sena.iam.adapter.out.messaging.OutboxRelayTest
+L2908: [INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.900 s -- in co.sena.iam.adapter.out.security.JwtAccessTokenTest
+L2912: [INFO] Tests run: 101, Failures: 0, Errors: 0, Skipped: 0
+L3019: [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.75 s -- in co.sena.iam.api.IamApiApplicationContextTest
+L3063: [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.202 s -- in co.sena.iam.api.IamApiApplicationSmokeTest
+L3067: [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+L3084: [WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.015 s -- in co.sena.iam.api.AuthorizationPostgresIT
+L3086: [WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 s -- in co.sena.iam.api.LoginAuditReportPostgresIT
+L3088: [WARNING] Tests run: 9, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.001 s -- in co.sena.iam.api.LoginPostgresIT
+L3090: [WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s -- in co.sena.iam.api.OutboxRelayPostgresIT
+L3092: [WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.003 s -- in co.sena.iam.api.PasswordResetPostgresIT
+L3094: [WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 10, Time elapsed: 0.008 s -- in co.sena.iam.api.RbacCatalogPostgresIT
+L3096: [WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.002 s -- in co.sena.iam.api.ScopeOverridePostgresIT
+L3098: [WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0 s -- in co.sena.iam.api.SessionPostgresIT
+L3100: [WARNING] Tests run: 11, Failures: 0, Errors: 0, Skipped: 11, Time elapsed: 0.001 s -- in co.sena.iam.api.UserManagementPostgresIT
+L3104: [WARNING] Tests run: 56, Failures: 0, Errors: 0, Skipped: 56
+L3111: [INFO] iam-service ........................................ SUCCESS [  1.128 s]
+L3112: [INFO] iam-core ........................................... SUCCESS [ 11.803 s]
+L3113: [INFO] iam-contracts ...................................... SUCCESS [ 16.107 s]
+L3114: [INFO] iam-adapters ....................................... SUCCESS [ 38.778 s]
+L3115: [INFO] iam-api ............................................ SUCCESS [ 36.196 s]
+L3117: [INFO] BUILD SUCCESS
+L3119: [INFO] Total time:  01:44 min
+L3120: [INFO] Finished at: 2026-10-23T20:51:14-05:00

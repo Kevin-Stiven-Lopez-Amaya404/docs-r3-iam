@@ -1,0 +1,158 @@
+{
+    "reviewDate":  "2026-10-23 America/Bogota",
+    "repository":  "code-sena/design-software-iam-service",
+    "workSha":  "7c837e0824263cef0aef89f807731adca839f25e",
+    "referenceSha":  "c7735cfc3135aad83091e2cfac5abe5809853c85",
+    "mergeBaseSha":  "6987e0fa64628b5602969572d34a900f022ae891",
+    "candidateTree":  "6118d2264574f353af3f95caf394b3302d9723ff",
+    "candidatePath":  "C:/Users/PC/AppData/Local/Temp/iam-alignment-20261023-aa00b0f1",
+    "mergeResult":  "Automatic merge went well; stopped before committing",
+    "mavenCommand":  "mvn -Dmaven.repo.local=F:/tools/maven-repository -o --batch-mode --no-transfer-progress verify",
+    "java":  "Temurin 21.0.12.1",
+    "maven":  "3.9.10",
+    "mavenExitCode":  0,
+    "finishedAt":  "2026-10-23T20:51:14-05:00",
+    "databaseEnvironment":  "IAM_DB_DSN unset; IAM_BROKER_HOST unset",
+    "suites":  [
+                   {
+                       "module":  "iam-core",
+                       "reports":  "surefire-reports",
+                       "files":  21,
+                       "tests":  96,
+                       "passed":  96,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0
+                   },
+                   {
+                       "module":  "iam-adapters",
+                       "reports":  "surefire-reports",
+                       "files":  15,
+                       "tests":  101,
+                       "passed":  101,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0
+                   },
+                   {
+                       "module":  "iam-api",
+                       "reports":  "surefire-reports",
+                       "files":  2,
+                       "tests":  4,
+                       "passed":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0
+                   },
+                   {
+                       "module":  "iam-api",
+                       "reports":  "failsafe-reports",
+                       "files":  9,
+                       "tests":  56,
+                       "passed":  0,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  56
+                   }
+               ],
+    "negativeGateCount":  20,
+    "negativeGatePassed":  20,
+    "negativeGate":  [
+                         {
+                             "test":  "JwtAccessTokenTest.rejectsTokenSignedByAnotherKey",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "JwtAccessTokenTest.rejectsUnsignedJwtWithAlgNone",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "JwtAccessTokenTest.rejectsTamperedJwtPayload",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "JwtAccessTokenTest.rejectsExpiredToken",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "JwtAccessTokenTest.rejectsMissingToken",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsInvalidToken",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsTokenWithUnknownSubject",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsDisabledAccount",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsMissingSession",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsRevokedSession",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsExpiredSession",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "GetCurrentUserTest.rejectsSessionOwnedByAnotherUser",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "SessionControllerTest.r4WithoutTokenReturns401",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "SessionControllerTest.r4OtherUserCannotListSessions",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "SessionControllerTest.r4OtherUserCannotRevokeSessions",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "SessionControllerTest.r4AdminWithoutGrantReturns403",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "SessionControllerTest.r4AdminWithViewOnlyCannotRevokeOtherUserSession",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "SessionControllerTest.r4AdminWithDeniedManageOverrideCannotRevoke",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "AuthorizationPolicyTest.centerScopedGrantDeniedOutsideCenter",
+                             "status":  "passed"
+                         },
+                         {
+                             "test":  "AuthorizationPolicyTest.centerScopedGrantDeniedWithoutTargetCenter",
+                             "status":  "passed"
+                         }
+                     ],
+    "firstAttempt":  "Sandboxed compiler could not resolve generated main classes during testCompile. Same source passed on retry outside sandbox; no POM or source changes.",
+    "limitations":  [
+                        "No real PostgreSQL or broker in this run; 56 IT skipped",
+                        "No Docker image or deployed runtime validated",
+                        "No OTLP/Tempo/Loki/Prometheus scrape/browser validation",
+                        "No commit or push to source branch"
+                    ],
+    "contentChecks":  {
+                          "referenceFiles":  10,
+                          "allReferenceFilesEqualReference":  true,
+                          "workFiles":  15,
+                          "allWorkFilesPreserved":  true,
+                          "unresolvedIndexEntries":  0,
+                          "originalWorktreeClean":  true,
+                          "originalWorktreeHead":  "7c837e0824263cef0aef89f807731adca839f25e"
+                      }
+}

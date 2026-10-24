@@ -1,0 +1,294 @@
+{
+  "reviewDate": "2026-10-23 America/Bogota",
+  "purpose": "Comparacion de referencias para informe de alineacion; no commit ni push ejecutado",
+  "forward": {
+    "repository_full_name": "code-sena/design-software-iam-service",
+    "base": "develop",
+    "head": "r3-observability-delivery-dev",
+    "status": "diverged",
+    "ahead_by": 1,
+    "behind_by": 8,
+    "total_commits": 1,
+    "too_large": null,
+    "base_commit": {
+      "sha": "c7735cfc3135aad83091e2cfac5abe5809853c85",
+      "url": "https://api.github.com/repos/code-sena/design-software-iam-service/commits/c7735cfc3135aad83091e2cfac5abe5809853c85",
+      "html_url": "https://github.com/code-sena/design-software-iam-service/commit/c7735cfc3135aad83091e2cfac5abe5809853c85"
+    },
+    "merge_base_commit": {
+      "sha": "6987e0fa64628b5602969572d34a900f022ae891",
+      "url": "https://api.github.com/repos/code-sena/design-software-iam-service/commits/6987e0fa64628b5602969572d34a900f022ae891",
+      "html_url": "https://github.com/code-sena/design-software-iam-service/commit/6987e0fa64628b5602969572d34a900f022ae891"
+    },
+    "files": [
+      {
+        "filename": ".dockerignore",
+        "status": "added",
+        "additions": 6,
+        "deletions": 0,
+        "changes": 6,
+        "previous_filename": null
+      },
+      {
+        "filename": ".github/workflows/ci.yml",
+        "status": "added",
+        "additions": 33,
+        "deletions": 0,
+        "changes": 33,
+        "previous_filename": null
+      },
+      {
+        "filename": ".mvn/wrapper/maven-wrapper.properties",
+        "status": "added",
+        "additions": 1,
+        "deletions": 0,
+        "changes": 1,
+        "previous_filename": null
+      },
+      {
+        "filename": "README.md",
+        "status": "modified",
+        "additions": 21,
+        "deletions": 0,
+        "changes": 21,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/observability/ADR-009-r3-observability.md",
+        "status": "added",
+        "additions": 28,
+        "deletions": 0,
+        "changes": 28,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/observability/integration.md",
+        "status": "added",
+        "additions": 71,
+        "deletions": 0,
+        "changes": 71,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/observability/validation.md",
+        "status": "added",
+        "additions": 87,
+        "deletions": 0,
+        "changes": 87,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/main/java/co/sena/iam/adapter/in/rest/ApiErrors.java",
+        "status": "modified",
+        "additions": 10,
+        "deletions": 2,
+        "changes": 12,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/main/java/co/sena/iam/adapter/in/rest/CorrelationIdFilter.java",
+        "status": "added",
+        "additions": 58,
+        "deletions": 0,
+        "changes": 58,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/test/java/co/sena/iam/adapter/in/rest/ApiErrorsTest.java",
+        "status": "added",
+        "additions": 52,
+        "deletions": 0,
+        "changes": 52,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/test/java/co/sena/iam/adapter/in/rest/CorrelationIdFilterTest.java",
+        "status": "added",
+        "additions": 164,
+        "deletions": 0,
+        "changes": 164,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/test/java/co/sena/iam/adapter/in/rest/HealthControllerTest.java",
+        "status": "modified",
+        "additions": 35,
+        "deletions": 0,
+        "changes": 35,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-api/pom.xml",
+        "status": "modified",
+        "additions": 4,
+        "deletions": 0,
+        "changes": 4,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-api/src/main/resources/application.yml",
+        "status": "modified",
+        "additions": 11,
+        "deletions": 1,
+        "changes": 12,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-api/src/test/java/co/sena/iam/api/IamApiApplicationContextTest.java",
+        "status": "modified",
+        "additions": 22,
+        "deletions": 0,
+        "changes": 22,
+        "previous_filename": null
+      }
+    ]
+  },
+  "reverse": {
+    "repository_full_name": "code-sena/design-software-iam-service",
+    "base": "r3-observability-delivery-dev",
+    "head": "c7735cfc3135aad83091e2cfac5abe5809853c85",
+    "status": "diverged",
+    "ahead_by": 8,
+    "behind_by": 1,
+    "total_commits": 8,
+    "too_large": null,
+    "base_commit": {
+      "sha": "7c837e0824263cef0aef89f807731adca839f25e",
+      "url": "https://api.github.com/repos/code-sena/design-software-iam-service/commits/7c837e0824263cef0aef89f807731adca839f25e",
+      "html_url": "https://github.com/code-sena/design-software-iam-service/commit/7c837e0824263cef0aef89f807731adca839f25e"
+    },
+    "merge_base_commit": {
+      "sha": "6987e0fa64628b5602969572d34a900f022ae891",
+      "url": "https://api.github.com/repos/code-sena/design-software-iam-service/commits/6987e0fa64628b5602969572d34a900f022ae891",
+      "html_url": "https://github.com/code-sena/design-software-iam-service/commit/6987e0fa64628b5602969572d34a900f022ae891"
+    },
+    "files": [
+      {
+        "filename": ".github/workflows/iam-r4-security.yml",
+        "status": "added",
+        "additions": 112,
+        "deletions": 0,
+        "changes": 112,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/main/java/co/sena/iam/adapter/in/rest/AuthExceptionHandler.java",
+        "status": "modified",
+        "additions": 11,
+        "deletions": 0,
+        "changes": 11,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/main/java/co/sena/iam/adapter/in/rest/SessionController.java",
+        "status": "modified",
+        "additions": 60,
+        "deletions": 10,
+        "changes": 70,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/main/java/co/sena/iam/adapter/out/security/JwtAccessTokenVerifier.java",
+        "status": "modified",
+        "additions": 11,
+        "deletions": 2,
+        "changes": 13,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/test/java/co/sena/iam/adapter/in/rest/SessionControllerTest.java",
+        "status": "modified",
+        "additions": 266,
+        "deletions": 4,
+        "changes": 270,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-adapters/src/test/java/co/sena/iam/adapter/out/security/JwtAccessTokenTest.java",
+        "status": "modified",
+        "additions": 56,
+        "deletions": 0,
+        "changes": 56,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-api/src/main/java/co/sena/iam/api/config/UseCaseConfiguration.java",
+        "status": "modified",
+        "additions": 4,
+        "deletions": 2,
+        "changes": 6,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-api/src/test/java/co/sena/iam/api/SessionPostgresIT.java",
+        "status": "modified",
+        "additions": 20,
+        "deletions": 0,
+        "changes": 20,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-core/src/main/java/co/sena/iam/application/usecase/GetCurrentUser.java",
+        "status": "modified",
+        "additions": 23,
+        "deletions": 2,
+        "changes": 25,
+        "previous_filename": null
+      },
+      {
+        "filename": "iam-core/src/test/java/co/sena/iam/application/usecase/GetCurrentUserTest.java",
+        "status": "modified",
+        "additions": 102,
+        "deletions": 2,
+        "changes": 104,
+        "previous_filename": null
+      }
+    ]
+  },
+  "pr43": {
+    "url": "https://github.com/code-sena/design-software-iam-service/pull/43",
+    "state": "open",
+    "merged": false,
+    "base": "develop",
+    "reportedBaseSha": "6987e0fa64628b5602969572d34a900f022ae891",
+    "head": "r3-observability-delivery-dev",
+    "headSha": "7c837e0824263cef0aef89f807731adca839f25e",
+    "note": "reportedBaseSha no coincide con punta develop de la comparacion directa; el analisis usa c7735cf"
+  },
+  "pr44": {
+    "state": "closed",
+    "merged": true,
+    "head": "feat/r4-security-improvements",
+    "headSha": "91dae32cf25038ae498d00bf45f22c7125f8fe65",
+    "mergeCommitSha": "c7735cfc3135aad83091e2cfac5abe5809853c85"
+  },
+  "r4WorkflowRuns": {
+    "workflow_runs": [
+      {
+        "id": 40012866652,
+        "name": "IAM R4 - Negative Security Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 3,
+        "jobs_url": "https://api.github.com/repos/code-sena/design-software-iam-service/actions/runs/40012866652/jobs",
+        "logs_url": "https://api.github.com/repos/code-sena/design-software-iam-service/actions/runs/40012866652/logs",
+        "workflow_id": 393991422
+      },
+      {
+        "id": 39950339939,
+        "name": "IAM R4 - Negative Security Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 1,
+        "jobs_url": "https://api.github.com/repos/code-sena/design-software-iam-service/actions/runs/39950339939/jobs",
+        "logs_url": "https://api.github.com/repos/code-sena/design-software-iam-service/actions/runs/39950339939/logs",
+        "workflow_id": 393991422
+      }
+    ]
+  },
+  "limitations": [
+    "Endpoints de runs por commit filtran eventos PR y solo primera pagina",
+    "No snapshot de protecciones de rama ni despliegues",
+    "Resultados de candidato local en validacion-local.json"
+  ]
+}
