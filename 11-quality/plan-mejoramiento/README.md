@@ -1,6 +1,6 @@
 # Planes de mejoramiento
 
-> Estado: En revisión | Última actualización: 2026-10-23
+> Estado: En revisión | Última actualización: 2026-10-24
 > Autor: Kevin Andrey Culma Gómez | Equipo: Monitoring / ADSO 3145555
 
 ## Contexto
@@ -21,3 +21,5 @@ Según el Acta 02 y el Anexo de Aporte Individual revisados, la asignación R3 d
 - [Informe verificable del plan de mejoramiento IAM — corte 2026-10-21](informe-verificado-plan-mejoramiento-iam-2026-10-21.md). Repositorios, cambios, pruebas conservadas, documentación preparada y pendientes de verificación.
 - [Validación de alineación IAM: R3 frente a develop — corte 2026-10-23](validacion-alineacion-iam-develop-2026-10-23.md). Correcciones por archivo, integración temporal ensayada, resultados y checks pendientes para la entrega.
 - [Revisión QA de entrega técnica IAM — corte 2026-10-23](revision-qa-alineacion-iam-sin-hu-2026-10-23.md). Revisión técnica de alineación; no corresponde a una Historia de Usuario.
+
+> Actualización 2026-10-24: consultar el estado vigente dentro del informe QA. Las ramas IAM Service, DB y MFE están alineadas por historial con sus respectivos `develop` (cero commits detrás), pero la revisión integral conserva pendientes de CI MFE, contrato y pruebas de integración actuales.

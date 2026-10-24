@@ -2,6 +2,22 @@
 
 > Este documento sigue como referencia la estructura de `Plantilla_qa.md`, pero el objeto revisado es una entrega técnica de alineación entre ramas. **No corresponde a una Historia de Usuario** y no se asignan criterios, bugs ni dependencias de HU.
 
+## Actualización del estado vigente — 24/10/2026
+
+Esta sección reemplaza los estados de rama/CI que aparecen en el corte histórico del 23 de octubre más abajo. La actualización documental y los metadatos consultados en GitHub reflejan el siguiente estado:
+
+| Repositorio y rama de Kevin | `develop` comparado | Resultado remoto | PR |
+|---|---|---|---|
+| [IAM Service — `r3-observability-delivery-dev`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev) | Base `c7735cfc3135aad83091e2cfac5abe5809853c85`; punta `06ab67bd54c0a561e20dde784c0191d67df30e6c` | 4 commits adelante, **0 detrás**. CI IAM y negativos R4 aprobaron en la punta actual. | [#43 abierta](https://github.com/code-sena/design-software-iam-service/pull/43) |
+| [IAM DB — `r3-iam-db-integration-dev`](https://github.com/code-sena/design-software-iam-db/tree/r3-iam-db-integration-dev) | Base `a1e01a42692da77269568f0ef49b2e4d3d035fa3`; punta `b89574a7eac05e2edef4d8d3f61df08f40214ce7` | 2 commits adelante, **0 detrás**. La CI migró una base limpia, comprobó actualización incremental y ejecutó el preflight. | [#79 abierta](https://github.com/code-sena/design-software-iam-db/pull/79) |
+| [IAM MFE — `r3-iam-mfe-integration-dev`](https://github.com/code-sena/design-software-iam-mfe/tree/r3-iam-mfe-integration-dev) | Base `8e94e1bd281ca12010fac754e7c376f2d078c20f`; punta `301cf6c4f5d07ddf2677bf3d4198ea8481e2720e` | 3 commits adelante, **0 detrás**. La CI falló antes de instalar dependencias por falta de `FRONTEND_DEPENDENCIES_READ_TOKEN`; build y pruebas CI quedaron omitidos. | [#10 abierta](https://github.com/code-sena/design-software-iam-mfe/pull/10) |
+
+Los tres PR siguen abiertos y apuntan a `develop`; ninguno se cerró ni se reemplazó. Los commits documentales que fijan la procedencia actual en cada rama aparecen con autor y committer `Kevin-Stiven-Lopez-Amaya404`: [Service](https://github.com/code-sena/design-software-iam-service/commit/06ab67bd54c0a561e20dde784c0191d67df30e6c), [DB](https://github.com/code-sena/design-software-iam-db/commit/b89574a7eac05e2edef4d8d3f61df08f40214ce7) y [MFE](https://github.com/code-sena/design-software-iam-mfe/commit/301cf6c4f5d07ddf2677bf3d4198ea8481e2720e).
+
+**Dictamen vigente:** la alineación de historial con `develop` está comprobada en los tres repositorios; eso no certifica por sí solo integración funcional de los tres candidatos. El check MFE continúa bloqueado hasta que un administrador configure el secreto indicado, y se debe repetir el smoke con los SHA actuales de Service/DB/MFE. En Service permanece la diferencia entre el permiso `VIEW` del OpenAPI fijado y `MANAGE` del código al revocar sesiones ajenas; la fuente canónica de contratos debe resolverla antes de regenerar la copia/tipos. Las pruebas DB/broker omitidas, shell real y observabilidad distribuida tampoco se declaran aprobadas. Por ello, **no se afirma “sin inconvenientes” ni aprobación final QA**.
+
+Los resultados enlazados en el cuerpo de este informe con corte 23/10/2026 son históricos, aunque fueron válidos para esos SHA. Las descripciones actuales de los PR se actualizaron para distinguir evidencia histórica, checks de las puntas vigentes y pendientes.
+
 ## 1. Información general
 
 | Campo | Información |
@@ -10,13 +26,13 @@
 | **Tipo de entrega** | Integración de cambios de referencia, preservación de observabilidad R3 y documentación de validación |
 | **Identidad Git de los commits de esta entrega** | `Kevin-Stiven-Lopez-Amaya404` (`mrroobot08@gmail.com`), confirmada por los metadatos de GitHub |
 | **Responsable QA** | No indicado en la evidencia disponible |
-| **Fecha de corte** | 23/10/2026, America/Bogota |
+| **Fecha de corte original** | 23/10/2026, America/Bogota; estado vigente actualizado en la sección anterior |
 | **Ambiente revisado** | GitHub (rama, PR y GitHub Actions) y ejecución Maven local documentada |
 | **Asignación individual** | Kevin Stiven López Amaya: R3 de observabilidad en IAM Service, según el Acta 02 y el Anexo de Aporte Individual revisados |
 | **PR** | [#43 — feat(iam): integrate request correlation and Prometheus metrics](https://github.com/code-sena/design-software-iam-service/pull/43) |
 | **Repositorio de trabajo asignado** | [`code-sena/design-software-iam-service`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev), rama `r3-observability-delivery-dev` |
 | **Rama de referencia** | [`develop`](https://github.com/code-sena/design-software-iam-service/tree/develop), SHA `c7735cfc3135aad83091e2cfac5abe5809853c85` |
-| **Rama revisada** | [`r3-observability-delivery-dev`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev), SHA `5350e1495c7764a62cd47bc9e83063a7eeb68053` |
+| **Rama revisada en el corte histórico** | [`r3-observability-delivery-dev`](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev), SHA `5350e1495c7764a62cd47bc9e83063a7eeb68053`; la punta vigente es `06ab67bd54c0a561e20dde784c0191d67df30e6c` |
 | **Repositorio personal de documentación** | [`docs-r3-iam`, rama `docs/doc-import-workspace`](https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-r3-iam/tree/docs/doc-import-workspace) |
 | **Repositorio documental del macroproyecto** | [`design-software-docs`, plan de mejoramiento](https://github.com/code-sena/design-software-docs/tree/main/11-quality/plan-mejoramiento) |
 | **Documento de análisis relacionado** | [`validacion-alineacion-iam-develop-2026-10-23.md`](validacion-alineacion-iam-develop-2026-10-23.md) |
@@ -78,7 +94,7 @@ Los dos últimos commits fueron reconstruidos para corregir la atribución anter
 
 No se documentó un bug independiente ni un fix aislado asociado a esta revisión. El cambio de código corresponde a la integración de la referencia `develop` y a la conservación de R3.
 
-### Evidencia automatizada en el SHA actual
+### Evidencia automatizada en la punta histórica del 23/10/2026
 
 | Comprobación | Resultado | Evidencia |
 |---|---|---|
@@ -148,34 +164,35 @@ No hay evidencia de un defecto reproducido en un ambiente QA, por lo que **no se
 
 El informe previo [`validacion-alineacion-iam-develop-2026-10-23.md`](validacion-alineacion-iam-develop-2026-10-23.md) conserva un diagnóstico de corte anterior y contiene estados históricos de rama antes de la integración. Para el estado actual de commits y CI debe usarse este documento junto con la documentación publicada en la rama actual. No reutilizar del informe histórico afirmaciones de que la rama aún no fue publicada o que no hay CI sobre el candidato actual.
 
-## 11. Resultado de la revisión
+## 11. Resultado de la revisión (estado actualizado)
 
 ### Resultado
 
-- ☑ **APTO PARA CONTINUAR A VALIDACIÓN QA, CON OBSERVACIONES PENDIENTES**
-- ☐ **DEVUELTO A DESARROLLO POR FALLA DE ALINEACIÓN CON `develop`**
+- ☑ **ALINEACIÓN DE HISTORIAL CON `develop` CONFIRMADA EN SERVICE, DB Y MFE**
+- ☑ **CI SERVICE Y DB APROBADA EN SUS PUNTAS ACTUALES**
+- ☐ **CI MFE / VALIDACIÓN QA INTEGRAL COMPLETADA**
 
 ### Motivo
 
-La alineación con `develop` está comprobada, la identidad de los commits fue corregida y los dos workflows del SHA actual aprobaron. Se permite continuar con la validación QA. Esto **no equivale a aprobación de la PR, aprobación de producción ni certificación E2E**: la PR no tiene revisión aprobatoria, 56 pruebas de integración fueron omitidas y el desfase OpenAPI continúa pendiente.
+La comparación remota confirma cero commits detrás de `develop` en las tres ramas de trabajo. Service y DB tienen CI exitosas en sus puntas actuales; MFE falla antes de instalar dependencias porque no está configurado `FRONTEND_DEPENDENCIES_READ_TOKEN`. La evidencia disponible tampoco contiene un smoke del conjunto de SHA actuales ni resuelve el desfase OpenAPI `VIEW`/`MANAGE`. Este resultado acredita alineación de historial, **no** el cierre de QA, ausencia de observaciones, aprobación de PR o certificación E2E.
 
 ## 12. Observaciones para Desarrollo
 
-1. Solicitar y registrar la revisión técnica pendiente en PR #43 antes de fusionar.
-2. Acordar y sincronizar el contrato OpenAPI de revocación de sesiones con la política implementada (`IDENTITY_USER_MANAGE` para sesiones ajenas y autogestión del dueño), incluyendo la copia institucional correspondiente.
-3. Ejecutar las pruebas de integración con PostgreSQL y, para el relay, RabbitMQ; adjuntar resultados del SHA que se valide. Mantener explícitas las pruebas que continúen omitidas.
-4. Si la aceptación exige observabilidad operacional, aportar evidencia del runtime con scrape Prometheus y exportación de trazas/logs a los destinos configurados.
-5. Mantener el autor y committer de los siguientes cambios bajo la identidad Git esperada y revisar los metadatos de GitHub antes de entregar.
+1. Solicitar a un administrador de MFE que configure `FRONTEND_DEPENDENCIES_READ_TOKEN` con acceso de lectura a los repositorios privados requeridos y vuelva a ejecutar CI.
+2. Repetir el smoke MFE → Service → DB usando las puntas actuales enlazadas arriba; conservar comandos y resultados. Ejecutar PostgreSQL y RabbitMQ donde aplique.
+3. Resolver con el dueño del contrato la diferencia de revocación en `design-software-shared-contracts`; luego actualizar el pin y regenerar los tipos afectados. No cambiar el permiso por inferencia.
+4. Aportar evidencia del web-shell y, si forma parte de la aceptación, del scrape Prometheus y la exportación/ingesta de trazas y logs.
+5. Obtener y registrar revisión técnica de las PR abiertas antes de fusionar. Los commits documentales actuales de los tres repositorios se verificaron con autor y committer Kevin.
 
 ## 13. Conclusión QA
 
-> La revisión documental y de GitHub confirma que `r3-observability-delivery-dev` contiene `develop` al SHA consultado, conserva la ampliación R3, tiene sus dos workflows actuales exitosos y muestra los commits de integración/documentación bajo la identidad Git de Kevin. La evidencia no demuestra despliegue en QA ni ejecución de las 56 pruebas de integración omitidas; además, queda pendiente alinear el contrato OpenAPI y obtener aprobación de la PR. La entrega puede continuar a validación QA con esos límites visibles, pero no se declara libre de observaciones ni lista para fusión o producción.
+> Al corte 24/10/2026, Service, DB y MFE están 0 commits detrás de sus respectivas ramas `develop`; PR #43, #79 y #10 siguen abiertas. Service y DB aprobaron sus workflows actuales. MFE no ejecutó instalación, pruebas ni build por falta de `FRONTEND_DEPENDENCIES_READ_TOKEN`. Sigue pendiente el smoke con los SHA actuales, la decisión del contrato `VIEW`/`MANAGE` y la evidencia de shell/observabilidad distribuida. La alineación de ramas está comprobada, pero **la entrega no está libre de observaciones y no se declara lista para cierre QA, fusión o producción**.
 
 **Resultado final:**
 
-> ☑ Alineación con la rama de referencia comprobada; continuar la validación QA con observaciones pendientes.
+> ☑ Alineación de historial con las ramas de referencia comprobada.
 
-> ☐ Aprobación final de QA/producción — no emitida en este documento.
+> ☐ Aprobación final de QA/producción — no emitida; hay bloqueos verificables pendientes.
 
 ### Evidencias y referencias
 
@@ -185,8 +202,14 @@ La alineación con `develop` está comprobada, la identidad de los commits fue c
 - [Rama actual](https://github.com/code-sena/design-software-iam-service/tree/r3-observability-delivery-dev)
 - [Comparación con `develop`](https://github.com/code-sena/design-software-iam-service/compare/develop...r3-observability-delivery-dev)
 - [PR #43](https://github.com/code-sena/design-software-iam-service/pull/43)
+- [PR #79 — IAM DB](https://github.com/code-sena/design-software-iam-db/pull/79)
+- [PR #10 — IAM MFE](https://github.com/code-sena/design-software-iam-mfe/pull/10)
 - [Commit merge `33c2303`](https://github.com/code-sena/design-software-iam-service/commit/33c2303d9c004971e17c4a03eb63bb442f9f3188)
 - [Commit documental `5350e14`](https://github.com/code-sena/design-software-iam-service/commit/5350e1495c7764a62cd47bc9e83063a7eeb68053)
 - [CI: IAM build and tests](https://github.com/code-sena/design-software-iam-service/actions/runs/40053785643)
 - [CI: IAM R4 negative security tests](https://github.com/code-sena/design-software-iam-service/actions/runs/40053785660)
+- [CI Service en la punta actual](https://github.com/code-sena/design-software-iam-service/actions/runs/40092215283)
+- [CI R4 Service en la punta actual](https://github.com/code-sena/design-software-iam-service/actions/runs/40092215448)
+- [CI DB en la punta actual](https://github.com/code-sena/design-software-iam-db/actions/runs/40092216422)
+- [CI MFE detenida por secreto ausente](https://github.com/code-sena/design-software-iam-mfe/actions/runs/40092215804)
 - [Evidencia local del plan de mejoramiento](evidencias-alineacion-iam-2026-10-23/README.md)
